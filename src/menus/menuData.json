@@ -1,0 +1,51 @@
+{
+  "breakfast": [
+    {
+      "name": "Argentinian Breakfast",
+      "description": "Smoked ham & Provolone Cheese Croissant or Baguette, served with coffee",
+      "price": "8.99",
+      "image": ""
+    }
+  ],
+  "appetizer": [
+    {
+      "name": "Provoletta",
+      "description": "Melted provolone cheese with spices",
+      "price": "7.99",
+      "image": ""
+    }
+  ],
+  "grilled": [
+    {
+      "name": "Meat Skewer",
+      "description": "8oz Flank steak pieces with grilled vegetables",
+      "price": "29.99",
+      "image": ""
+    }
+  ],
+  "specialties": [
+    {
+      "name": "Ribeye Steak",
+      "description": "Juicy 14oz steak, topped with garlic butter and rosemary",
+      "price": "34.99",
+      "image": ""
+    },
+    {
+      "name": "Loin Cartoccio",
+      "description": "Fillet mignon wrapped with bacon, served on top of a delicious creamy mushroom cartoccio",
+      "price": "44.99",
+      "image": ""
+    }
+  ],
+  "sharing": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "sandwiches": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "burgers": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "pastas": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "sides": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "seafood": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "juices": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "beers": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "butchery": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "bakery": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "extras": [{ "name": "", "description": "", "price": "", "image": "" }]
+}
