@@ -5,7 +5,6 @@ import CapreseBruschetta from "../assets/capresebruschetta.jpg";
 import { Carousel } from "react-bootstrap";
 import "../styles/carousel.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
@@ -16,7 +15,8 @@ const CarouselPage = () => {
         Located in the heart of Miramar, Florida
         <a
           href="https://www.google.com/maps/place/Miga's+Florida/@25.9793519,-80.3644991,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9a475305c9a3d:0xc3fbeda0da46d66c!8m2!3d25.9793471!4d-80.3619242!16s%2Fg%2F12m8_5tgn?entry=ttu"
-          target="_blank">
+          target="_blank"
+          rel="noreferrer">
           <FontAwesomeIcon
             className="locationIcon"
             icon={faLocationDot}
@@ -38,7 +38,7 @@ const CarouselPage = () => {
         className="subtitle">
         Welcome
       </motion.h5>
-      <Carousel interval={1000}>
+      <Carousel interval={500}>
         <Carousel.Item>
           <div className="sliderContainer">
             <img className="d-block w-100" src={Asado} alt="ShortRibs" />

@@ -1,0 +1,27 @@
+.title {
+  text-align: center;
+  padding: 2rem;
+}
+
+.titleDescription {
+  padding: 1rem;
+}
+
+.scrollContainer {
+  justify-content: start;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.contentContainer {
+  display: flex;
+}
+
+.aboutP {
+  display: grid;
+  place-items: center;
+}
+
+.frontImg {
+  margin-right: 2rem;
+}
