@@ -1,11 +1,16 @@
 import React from "react";
-import Migas from "../assets/migas-front.png";
+import { useEffect, useRef } from "react";
+import Migas from "../assets/migasFront.mp4";
 import "../styles/about.css";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const About = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 2], [0.3, 1]);
+  const videoRef = useRef();
+  useEffect(() => {
+    videoRef.current.play();
+  }, []);
 
   return (
     <div style={{ height: "170vh" }}>
@@ -32,7 +37,7 @@ const About = () => {
         </div>
         <div className="contentContainer">
           <div className="aboutP">
-            <p style={{ width: "50%" }}>
+            <p style={{ width: "100%" }}>
               For over a decade, Miga's Steakhouse has been synonymous with
               premium steaks—curated with meticulous care to honor the heritage
               of Argentinian grilling and innovation alike. Step into our
@@ -43,11 +48,18 @@ const About = () => {
               bakery's creations, where desserts become intricate works of art
               and bespoke cakes capture cherished moments. As advocates of
               homestyle cuisine, we cater to diverse palates, extending our
-              offerings beyond steak enthusiasts{" "}
+              offerings beyond steak enthusiasts
             </p>
           </div>
           <div>
-            <img className="frontImg" src={Migas} alt="Miga's Front" />
+            <video
+              className="rounded-4"
+              loop
+              muted
+              ref={videoRef}
+              autoPlay={true}>
+              <source src={Migas} />
+            </video>
           </div>
         </div>
       </motion.div>

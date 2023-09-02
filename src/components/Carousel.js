@@ -30,12 +30,17 @@ const CarouselPage = () => {
         transition={{ delay: 1.5, duration: 1.5 }}
         className="carouselHeading">
         Miga's Steakhouse
+        <div style={{ display: "flex" }}>
+          <p className="border-bottom" style={{ width: "45%" }}></p>
+          <span></span>
+          <p style={{ width: "47%" }} className="border-bottom"></p>
+        </div>
       </motion.h1>
       <motion.h5
         initial={{ opacity: 0, x: 0, y: 20 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="subtitle">
+        className="subtitle border-bottom">
         Welcome
       </motion.h5>
       <Carousel interval={500}>
