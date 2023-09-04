@@ -1,7 +1,7 @@
 import React from "react";
 import Asado from "../assets/asadodetiras.jpg";
 import MixGrillx2 from "../assets/mixgrillx2.jpg";
-import CapreseBruschetta from "../assets/capresebruschetta.jpg";
+import MixGrillx3 from "../assets/mixgrillx3.jpg";
 import { Carousel } from "react-bootstrap";
 import "../styles/carousel.css";
 import { motion } from "framer-motion";
@@ -31,19 +31,26 @@ const CarouselPage = () => {
         className="carouselHeading">
         Miga's Steakhouse
         <div style={{ display: "flex" }}>
-          <p className="border-bottom" style={{ width: "45%" }}></p>
+          <p className="border-bottom border-2" style={{ width: "45%" }}></p>
           <span></span>
-          <p style={{ width: "47%" }} className="border-bottom"></p>
+          <p style={{ width: "47%" }} className="border-bottom border-2"></p>
         </div>
       </motion.h1>
+      <motion.p
+        className="pLength"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2, duration: 1.5 }}>
+        Since 2009
+      </motion.p>
       <motion.h5
         initial={{ opacity: 0, x: 0, y: 20 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
         transition={{ duration: 1.5 }}
-        className="subtitle border-bottom">
+        className="subtitle border-bottom border-2">
         Welcome
       </motion.h5>
-      <Carousel interval={500}>
+      <Carousel interval={500} style={{ width: "100%" }}>
         <Carousel.Item>
           <div className="sliderContainer">
             <img className="d-block w-100" src={Asado} alt="ShortRibs" />
@@ -60,11 +67,7 @@ const CarouselPage = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div className="sliderContainer">
-            <img
-              className="d-block w-100"
-              src={CapreseBruschetta}
-              alt="Third slide"
-            />
+            <img className="d-block w-100" src={MixGrillx3} alt="Third slide" />
           </div>
         </Carousel.Item>
       </Carousel>

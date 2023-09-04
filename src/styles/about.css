@@ -18,14 +18,20 @@
 }
 
 .aboutP {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutP p {
+  width: 60%;
 }
 
 .frontImg {
   margin-right: 2rem;
 }
 
-p {
+/* p {
   font-size: 2vw;
 }
 
@@ -49,4 +55,4 @@ video {
   video {
     width: 30%;
   }
-}
+} */

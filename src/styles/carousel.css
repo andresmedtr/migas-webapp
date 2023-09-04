@@ -31,6 +31,17 @@
   z-index: 1;
 }
 
+.pLength {
+  position: absolute;
+  top: 65%;
+  text-align: center;
+  /* transform: translate(-50%, -50%) !important; */
+  font-size: 2rem;
+  color: #b48303;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
 span {
   background: url(https://migasflorida.com/wp-content/themes/themify-ultra/skins/restaurant/images/fork-knife.svg)
     no-repeat 50%;
@@ -54,7 +65,7 @@ span {
 
 .sliderContainer {
   width: 100%;
-  height: 41rem;
+  height: auto;
 }
 
 .sliderContainer img {

@@ -35,6 +35,18 @@
       "description": "Fillet mignon wrapped with bacon, served on top of a delicious creamy mushroom cartoccio",
       "price": "44.99",
       "image": ""
+    },
+    {
+      "name": "Salmon Cartoccio",
+      "description": "Grilled Salmon, served on top of a delicious creamy mushroom cartoccio",
+      "price": "44.99",
+      "image": ""
+    },
+    {
+      "name": "Grilled T-Bone",
+      "description": "Grilled T-Bone Steak, marinated in red wine and served on a bed of mushroom risotto",
+      "price": "44.99",
+      "image": ""
     }
   ],
   "sharing": [{ "name": "", "description": "", "price": "", "image": "" }],
