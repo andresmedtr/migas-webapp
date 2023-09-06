@@ -3,6 +3,7 @@ import "../styles/order.css";
 import { text } from "@fortawesome/fontawesome-svg-core";
 import Uber from "../assets/ubereats.jpg";
 import Doordash from "../assets/doordash.jpg";
+import MobileModal from "../components/MobileModal";
 
 const Order = () => {
   const redirectToApp = () => {
@@ -25,6 +26,7 @@ const Order = () => {
 
   return (
     <div>
+      <MobileModal />
       <div className="titleContainer">
         <h2>Ordering</h2>
         <button>Pick/up</button>

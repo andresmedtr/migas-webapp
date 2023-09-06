@@ -1,7 +1,7 @@
 import React from "react";
 import About from "../components/About";
-import Specialties from "../components/specialties";
 import Carousel from "../components/Carousel";
+import PopularPlates from "../components/PopularPlates";
 const Home = () => {
   return (
     <div>
@@ -9,7 +9,7 @@ const Home = () => {
         <Carousel />
       </div>
       <About />
-      <Specialties />
+      <PopularPlates />
     </div>
   );
 };

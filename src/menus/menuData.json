@@ -4,7 +4,13 @@
       "name": "Argentinian Breakfast",
       "description": "Smoked ham & Provolone Cheese Croissant or Baguette, served with coffee",
       "price": "8.99",
-      "image": ""
+      "image": "migas-front.png"
+    },
+    {
+      "name": "Continental Breakfast",
+      "description": "Smoked ham & Provolone Cheese Egg Tortilla, served with coffee",
+      "price": "13.99",
+      "image": "mixgrillx2.jpg"
     }
   ],
   "appetizer": [
@@ -49,6 +55,32 @@
       "image": ""
     }
   ],
+  "mixGrills": [
+    {
+      "name": "Mix Grill For Two",
+      "description": "A variety of meats, including flank steak, short ribs, and your choice of chicken breast or sweetbread and chorizo or blood sausage",
+      "price": "54.99",
+      "image": "mixgrillx2.jpg"
+    },
+    {
+      "name": "Migas Meat Sample for Three",
+      "description": "4 of our best cuts, New York Steak, Short Ribs, Picanha and Flank Steak",
+      "price": "99.99",
+      "image": "mixgrillx3.jpg"
+    },
+    {
+      "name": "Mediterranean Sample for Four",
+      "description": "Taste all of our specialties on a wooden plate, includes Shrimp, Pork Chop, Sausage, Picanha, New York Strip, and Short Ribs",
+      "price": "134.99",
+      "image": "4meatsample.jpg"
+    },
+    {
+      "name": "Mediterranean Sample for Six",
+      "description": "For larger groups, house recommended. Shrimp, Pork Chops, Sausages, Picanhas, New York and Short Ribs. All aside of our house wine",
+      "price": "189.99",
+      "image": "asadodetiras.jpg"
+    }
+  ],
   "sharing": [{ "name": "", "description": "", "price": "", "image": "" }],
   "sandwiches": [{ "name": "", "description": "", "price": "", "image": "" }],
   "burgers": [{ "name": "", "description": "", "price": "", "image": "" }],
@@ -58,6 +90,13 @@
   "juices": [{ "name": "", "description": "", "price": "", "image": "" }],
   "beers": [{ "name": "", "description": "", "price": "", "image": "" }],
   "butchery": [{ "name": "", "description": "", "price": "", "image": "" }],
-  "bakery": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "bakery": [
+    {
+      "name": "Milhojas",
+      "description": "Delicious layered napoleon with vanilla custard and your favorite topping",
+      "price": "8.99",
+      "image": "milhojas.jpg"
+    }
+  ],
   "extras": [{ "name": "", "description": "", "price": "", "image": "" }]
 }
