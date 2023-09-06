@@ -28,8 +28,8 @@ const PlatesCarousel = () => {
                 alt={`${index} Slide`}
               />
               <Carousel.Caption>
-                <h2>{item.name}</h2>
-                <p>{item.description}</p>
+                <h1>{item.name}</h1>
+                <p style={{ fontSize: "1.5rem" }}>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -58,8 +58,8 @@ const PlatesCarousel = () => {
                 alt={`${index} Slide`}
               />
               <Carousel.Caption>
-                <h2>{item.name}</h2>
-                <p>{item.description}</p>
+                <h1>{item.name}</h1>
+                <p style={{ fontSize: "1.5rem" }}>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -88,8 +88,8 @@ const PlatesCarousel = () => {
                 alt={`${index} Slide`}
               />
               <Carousel.Caption>
-                <h2>{item.name}</h2>
-                <p>{item.description}</p>
+                <h1>{item.name}</h1>
+                <p style={{ fontSize: "1.5rem" }}>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
