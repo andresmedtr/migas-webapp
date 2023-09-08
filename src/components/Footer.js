@@ -9,9 +9,13 @@ export const Footer = () => {
         <div className="container">
           <section className="mt-5">
             <div className="row text-center d-flex justify-content-center pt-5">
-              <div className="col-md-2">
-                <h6 className="text-uppercase font-weight-bold">About us</h6>
-              </div>
+              <a href="#aboutus" className="link">
+                <div className="col-md-2">
+                  <h6 className="text-uppercase font-weight-bold link">
+                    About us
+                  </h6>
+                </div>
+              </a>
               <div className="col-md-2">
                 <h6 className="text-uppercase font-weight-bold">Contact</h6>
               </div>

@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import Migas from "../assets/migasFront.mp4";
 import "../styles/about.css";
 import { motion } from "framer-motion";
+import Frame from "./Frame";
 
 const About = () => {
   // const { scrollYProgress } = useScroll();
@@ -17,7 +18,7 @@ const About = () => {
       <motion.div
         className="scrollContainer"
         style={{
-          height: "100vh",
+          height: "auto",
           fontSize: "1.5rem",
           // opacity: scrollYProgress,
           // transform: `scale(${scale})`,
@@ -25,13 +26,12 @@ const About = () => {
         <div className="title">
           <motion.h1
             style={{ display: "flex", justifyContent: "center" }}
-            className=""
+            className="border-bottom border-warning text-center border-4"
             initial={{ opacity: 0, x: 0, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 3, duration: 2 }}>
-            <h1 className="border-bottom border-warning w-75 text-center border-4">
-              ABOUT US
-            </h1>
+            transition={{ delay: 3, duration: 2 }}
+            id="aboutus">
+            ABOUT US
           </motion.h1>
           <h5 className="titleDescription">
             Nestled in the heart of Miramar, Florida, since 2009,{" "}
@@ -68,6 +68,7 @@ const About = () => {
           </div>
         </div>
       </motion.div>
+      <Frame />
     </div>
   );
 };

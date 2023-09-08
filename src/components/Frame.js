@@ -1,8 +1,8 @@
 import React from "react";
+import IFrame from "react-iframe";
 import { motion } from "framer-motion";
-import PlatesCarousel from "./Specialties/PlatesCarousel";
 
-const PopularPlates = () => {
+const Frame = () => {
   return (
     <div>
       <div
@@ -21,27 +21,24 @@ const PopularPlates = () => {
           initial={{ opacity: 0, x: 0, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ delay: 3, duration: 2 }}>
-          SPECIALTIES
+          VIRTUAL VISIT
         </motion.h1>
       </div>
-      <PlatesCarousel />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "3rem",
+        }}>
+        <iframe
+          width="1000"
+          height="500"
+          src="https://my.matterport.com/show/?m=Eba1G7Wskqo"
+          allowFullScreen
+          allow="xr-spatial-tracking"></iframe>
+      </div>
     </div>
   );
 };
 
-export default PopularPlates;
-
-{
-  /* <div className="" key={index}>
-<div className="">
-  <img src={Ribeye} alt={item.name} style={{ width: "30%" }} />
-  <div className="m-2">
-    <h4 className="">{item.name}</h4>
-    <p className="">{item.description}</p>
-  </div>
-  <ul className="list-group list-group-flush">
-    <li className="list-group-item">{item.price}</li>
-  </ul>
-</div>
-</div> */
-}
+export default Frame;
