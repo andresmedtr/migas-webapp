@@ -33,15 +33,15 @@ const About = () => {
             id="aboutus">
             ABOUT US
           </motion.h1>
-          <h5 className="titleDescription">
+          <h4 className="titleDescription">
             Nestled in the heart of Miramar, Florida, since 2009,{" "}
             <strong>Miga's Steakhouse</strong> is a heaven for connoisseurs of
             top-quality steaks.
-          </h5>
+          </h4>
         </div>
         <div className="contentContainer">
-          <div className="aboutP col">
-            <p className="border-bottom border-warning m-0 border-4">
+          <div className="p-4">
+            <p className="m-0 mb-5 border-2 border-bottom border-warning">
               For the past 14 years, Miga's Steakhouse has been synonymous with
               premium steaks—curated with meticulous care to honor the heritage
               of Argentinian grilling and innovation alike. Step into our
@@ -55,10 +55,8 @@ const About = () => {
               extending our offerings beyond steak enthusiasts, with a dense
               variety of wines.
             </p>
-          </div>
-          <div className="col border-bottom border-warning border-4">
             <video
-              className="rounded-4 w-100"
+              className="video w-75 m-auto rounded-4"
               loop
               muted
               ref={videoRef}

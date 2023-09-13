@@ -1,6 +1,6 @@
 import React from "react";
-import IFrame from "react-iframe";
 import { motion } from "framer-motion";
+import "../styles/frame.css";
 
 const Frame = () => {
   return (
@@ -8,7 +8,7 @@ const Frame = () => {
       <div
         style={{
           textAlign: "center",
-          padding: "2rem",
+          padding: "1rem",
           fontSize: "3rem",
         }}>
         <motion.h1
@@ -24,13 +24,9 @@ const Frame = () => {
           VIRTUAL VISIT
         </motion.h1>
       </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "3rem",
-        }}>
+      <div className="d-flex justify-content-center mt-3">
         <iframe
+          title="virtual-visit"
           width="1000"
           height="500"
           src="https://my.matterport.com/show/?m=Eba1G7Wskqo"

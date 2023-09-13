@@ -1,11 +1,10 @@
 .title {
   text-align: center;
-  padding: 2rem;
-  font-size: 3rem;
+  padding-top: 2rem;
 }
 
 .titleDescription {
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .scrollContainer {
@@ -18,19 +17,13 @@
   display: flex;
 }
 
-.aboutP {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100%;
-}
-
-.aboutP p {
-  width: 60%;
-}
-
 .frontImg {
   margin-right: 2rem;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
 }
 
 /* p {

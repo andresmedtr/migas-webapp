@@ -1,10 +1,9 @@
 .locationText {
-  margin-top: 2%;
   position: absolute;
-  top: 1%;
+  top: 6%;
   padding-top: 1rem;
   width: 100%;
-  font-size: xx-large;
+  font-size: x-large;
   display: block;
   text-align: center;
   z-index: 2;
@@ -29,7 +28,6 @@
   top: 50%;
   text-align: center;
   /* transform: translate(-50%, -50%) !important; */
-  font-size: 6rem;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -38,9 +36,7 @@
 .pLength {
   position: absolute;
   top: 65%;
-  text-align: center;
   /* transform: translate(-50%, -50%) !important; */
-  font-size: 3rem;
   color: #b48303;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -59,9 +55,7 @@ span {
 .subtitle {
   position: absolute;
   top: 40%;
-  font-size: 4rem;
   /* transform: translate(-50%, -50%) !important; */
-  color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   z-index: 1;
   color: #b48303;

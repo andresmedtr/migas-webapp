@@ -36,20 +36,20 @@ const CarouselPage = () => {
           <p style={{ width: "47%" }} className="border-bottom border-2"></p>
         </div>
       </motion.h1>
-      <motion.p
+      <motion.h2
         className="pLength"
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 2, duration: 1.5 }}>
         Since 2009
-      </motion.p>
-      <motion.h5
+      </motion.h2>
+      <motion.h2
         initial={{ opacity: 0, x: 0, y: 20 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
         transition={{ duration: 1.5 }}
         className="subtitle border-bottom border-2">
         Welcome
-      </motion.h5>
+      </motion.h2>
       <Carousel interval={500} style={{ width: "100%" }}>
         <Carousel.Item>
           <div className="sliderContainer">

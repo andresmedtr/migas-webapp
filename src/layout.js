@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Navbar from "./components/navbar";
+import CustomNavbar from "./components/CustomNavbar";
 import Home from "./views/Home";
 import Order from "./views/Order";
 import { Footer } from "./components/Footer";
@@ -11,13 +11,13 @@ function Layout() {
   return (
     <div className="App">
       <BrowserRouter basename={basename}>
-        <Navbar />
+        <CustomNavbar />
         <Routes>
           <Route element={<Home />} path="/" />
           <Route element={<Order />} path="/order" />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

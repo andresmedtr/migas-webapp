@@ -25,29 +25,9 @@ const Order = () => {
   // };
 
   return (
-    <div>
-      <MobileModal />
-      <div className="titleContainer">
-        <h2>Ordering</h2>
-        <button>Pick/up</button>
-        <button>Delivery</button>
-      </div>
-      <div style={{ textAlign: "start", marginLeft: "18rem" }}>Menu</div>
-      <div style={{ textAlign: "end", marginRight: "18rem" }}>
-        <a
-          href="https://www.ubereats.com/store/migas/rMaZBuaLRfG7_Oq0-yUklg/c7cd2aeb-d461-4693-b7c1-be48838b547e?diningMode=DELIVERY"
-          target="_blank">
-          <img style={{ width: "10%" }} src={Uber} alt="uber" />
-        </a>
-        <a
-          href="https://www.doordash.com/store/miga's-bread-deli-meat-&-wine-miramar-105895/?event_type=autocomplete&pickup=false"
-          target="_blank">
-          <img
-            style={{ width: "10%", height: "2rem" }}
-            src={Doordash}
-            alt="doordash"
-          />
-        </a>
+    <div className="d-flex pt-5">
+      <div>
+        <h1 className="pt-5">Order Now From Our Apps</h1>
       </div>
     </div>
   );
