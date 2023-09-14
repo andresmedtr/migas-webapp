@@ -41,7 +41,7 @@ const About = () => {
         </div>
         <div className="contentContainer">
           <div className="p-4">
-            <p className="m-0 mb-5 border-2 border-bottom border-warning">
+            <p className="pAbout m-0 mb-5 border-2 border-bottom border-warning">
               For the past 14 years, Miga's Steakhouse has been synonymous with
               premium steaks—curated with meticulous care to honor the heritage
               of Argentinian grilling and innovation alike. Step into our

@@ -6,3 +6,14 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.itemDescription p {
+  font-size: 10px; /* Default font size */
+}
+
+@media screen and (max-width: 768px) {
+  .itemDescription p {
+    font-size: 0.8rem; /* Adjust the value to make the font smaller */
+    color: red;
+  }
+}

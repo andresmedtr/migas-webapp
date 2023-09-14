@@ -30,18 +30,3 @@ const PopularPlates = () => {
 };
 
 export default PopularPlates;
-
-{
-  /* <div className="" key={index}>
-<div className="">
-  <img src={Ribeye} alt={item.name} style={{ width: "30%" }} />
-  <div className="m-2">
-    <h4 className="">{item.name}</h4>
-    <p className="">{item.description}</p>
-  </div>
-  <ul className="list-group list-group-flush">
-    <li className="list-group-item">{item.price}</li>
-  </ul>
-</div>
-</div> */
-}

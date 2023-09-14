@@ -13,10 +13,6 @@
   padding: 1rem;
 }
 
-.contentContainer {
-  display: flex;
-}
-
 .frontImg {
   margin-right: 2rem;
 }
@@ -26,28 +22,11 @@
   justify-content: center;
 }
 
-/* p {
-  font-size: 2vw;
-}
-
-video {
-  width: 60rem;
-}
-
-@media screen and (min-width: 390) {
-  p {
-    font-size: 7vw;
+@media screen and (max-width: 768px) {
+  .pAbout {
+    font-size: 10rem;
   }
-  video {
-    width: 30%;
+  .video {
+    width: 100%;
   }
 }
-
-@media screen and (min-height: 844) {
-  p {
-    font-size: 7vw;
-  }
-  video {
-    width: 30%;
-  }
-} */

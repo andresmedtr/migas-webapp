@@ -19,7 +19,7 @@ const PlatesCarousel = () => {
         <Carousel
           className=""
           style={{
-            width: "50%",
+            width: "90%",
           }}>
           {menuData.mixGrills.map((item, index) => (
             <Carousel.Item key={index}>
@@ -29,9 +29,9 @@ const PlatesCarousel = () => {
                 alt={`${index} Slide`}
               />
               <div className="image-overlay"></div>
-              <Carousel.Caption>
+              <Carousel.Caption className="itemDescription">
                 <h5>{item.name}</h5>
-                <p style={{ fontSize: "1rem" }}>{item.description}</p>
+                <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -61,9 +61,9 @@ const PlatesCarousel = () => {
               />
               <div className="image-overlay"></div>
 
-              <Carousel.Caption>
+              <Carousel.Caption className="itemDescription">
                 <h5>{item.name}</h5>
-                <p style={{ fontSize: "1rem" }}>{item.description}</p>
+                <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
@@ -93,9 +93,9 @@ const PlatesCarousel = () => {
               />
               <div className="image-overlay"></div>
 
-              <Carousel.Caption>
+              <Carousel.Caption className="itemDescription">
                 <h5>{item.name}</h5>
-                <p style={{ fontSize: "1rem" }}>{item.description}</p>
+                <p>{item.description}</p>
               </Carousel.Caption>
             </Carousel.Item>
           ))}
