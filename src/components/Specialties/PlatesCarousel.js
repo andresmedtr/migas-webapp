@@ -9,11 +9,13 @@ const PlatesCarousel = () => {
       <div className="d-flex align-items-center justify-content-center">
         <h2 className="border-2 border-bottom border-warning">MIX GRILLS</h2>
       </div>
-      <div className="d-flex align-items-center justify-content-center">
+      <div
+        className="d-flex align-items-center justify-content-center"
+        data-aos="fade-right">
         <Carousel
           className="carouselShow"
           style={{
-            width: "50%",
+            width: "35%",
           }}>
           {menuData.mixGrills.map((item, index) => (
             <Carousel.Item key={index}>
@@ -35,11 +37,13 @@ const PlatesCarousel = () => {
       <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
         <h2 className="border-2 border-bottom border-warning">BREAKFAST</h2>
       </div>
-      <div className="d-flex align-items-center justify-content-center">
+      <div
+        className="d-flex align-items-center justify-content-center"
+        data-aos="fade-left">
         <Carousel
           className="carouselShow"
           style={{
-            width: "50%",
+            width: "35%",
           }}>
           {menuData.breakfast.map((item, index) => (
             <Carousel.Item key={index}>
@@ -60,11 +64,13 @@ const PlatesCarousel = () => {
       <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
         <h2 className="border-2 border-bottom border-warning">DESSERTS</h2>
       </div>
-      <div className="d-flex align-items-center justify-content-center">
+      <div
+        className="d-flex align-items-center justify-content-center mb-5"
+        data-aos="fade-right">
         <Carousel
           className="carouselShow"
           style={{
-            width: "50%",
+            width: "35%",
           }}>
           {menuData.bakery.map((item, index) => (
             <Carousel.Item key={index}>

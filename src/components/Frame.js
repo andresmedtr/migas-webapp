@@ -4,7 +4,7 @@ import "../styles/frame.css";
 
 const Frame = () => {
   return (
-    <div>
+    <div data-aos="fade-left">
       <div
         style={{
           textAlign: "center",
@@ -20,15 +20,17 @@ const Frame = () => {
           className="border-bottom border-warning text-center border-4"
           initial={{ opacity: 0, x: 0, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
-          transition={{ delay: 3, duration: 2 }}>
+          transition={{ duration: 1 }}>
           VIRTUAL VISIT
         </motion.h1>
       </div>
-      <div className="d-flex justify-content-center mt-3">
+      <div
+        className="d-flex justify-content-center mt-3 w-75 m-auto"
+        data-aos="fade-left">
         <iframe
           title="virtual-visit"
-          width="1000"
-          height="500"
+          width="500"
+          height="250"
           src="https://my.matterport.com/show/?m=Eba1G7Wskqo"
           allowFullScreen
           allow="xr-spatial-tracking"></iframe>

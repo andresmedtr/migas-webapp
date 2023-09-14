@@ -42,16 +42,26 @@
 @media screen and (max-width: 768px) {
   .navbarContainer {
     height: 1%;
+    width: 80%;
   }
   .navBar {
-    height: 10%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 74.5%;
+  }
+
+  .navbarContainer {
+    position: fixed;
+    z-index: 3;
+    width: 74.5%;
   }
 
   .nav-items {
     text-align: center;
   }
   .nav-link {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 1);
     color: white;
   }
 }

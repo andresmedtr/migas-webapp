@@ -14,8 +14,9 @@ const About = () => {
   }, []);
 
   return (
-    <div style={{ height: "auto" }}>
+    <div>
       <motion.div
+        data-aos="fade-right"
         className="scrollContainer"
         style={{
           height: "auto",
@@ -29,7 +30,7 @@ const About = () => {
             className="border-bottom border-warning text-center border-4"
             initial={{ opacity: 0, x: 0, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ delay: 3, duration: 2 }}
+            transition={{ duration: 1 }}
             id="aboutus">
             ABOUT US
           </motion.h1>
@@ -56,7 +57,7 @@ const About = () => {
               variety of wines.
             </p>
             <video
-              className="video w-75 m-auto rounded-4"
+              className="video w-50 m-auto rounded-4"
               loop
               muted
               ref={videoRef}

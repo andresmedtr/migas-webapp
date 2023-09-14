@@ -4,13 +4,25 @@
       "name": "Argentinian Breakfast",
       "description": "Smoked ham & Provolone Cheese Croissant or Baguette, served with coffee",
       "price": "8.99",
-      "image": "migas-front.png"
+      "image": "fruitwaffles.jpg"
     },
     {
       "name": "Continental Breakfast",
       "description": "Smoked ham & Provolone Cheese Egg Tortilla, served with coffee",
       "price": "13.99",
-      "image": "mixgrillx2.jpg"
+      "image": "fruitwaffles.jpg"
+    },
+    {
+      "name": "Fruit Waffles",
+      "description": "Homemade waffles, with fruits topping.",
+      "price": "13.99",
+      "image": "fruitwaffles.jpg"
+    },
+    {
+      "name": "Chicken & Waffles",
+      "description": "Homemade waffles, with fried chicken tenders.",
+      "price": "13.99",
+      "image": "chicken&waffles.jpg"
     }
   ],
   "appetizer": [

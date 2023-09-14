@@ -4,7 +4,7 @@ import PlatesCarousel from "./Specialties/PlatesCarousel";
 
 const PopularPlates = () => {
   return (
-    <div>
+    <div data-aos="fade-right">
       <div
         style={{
           textAlign: "center",
@@ -20,7 +20,7 @@ const PopularPlates = () => {
           className="border-bottom border-warning text-center border-4"
           initial={{ opacity: 0, x: 0, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
-          transition={{ delay: 3, duration: 2 }}>
+          transition={{ duration: 1 }}>
           SPECIALTIES
         </motion.h1>
       </div>
