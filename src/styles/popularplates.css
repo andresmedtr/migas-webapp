@@ -8,12 +8,14 @@
 }
 
 .itemDescription p {
-  font-size: 10px; /* Default font size */
+  font-size: 1rem; /* Default font size */
 }
 
 @media screen and (max-width: 768px) {
   .itemDescription p {
-    font-size: 0.8rem; /* Adjust the value to make the font smaller */
-    color: red;
+    font-size: 0.4rem; /* Adjust the value to make the font smaller */
+  }
+  .itemDescription h5 {
+    font-size: 0.6rem;
   }
 }

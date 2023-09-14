@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Asado from "../assets/asadodetiras.jpg";
 import MixGrillx2 from "../assets/mixgrillx2.jpg";
 import MixGrillx3 from "../assets/mixgrillx3.jpg";
@@ -7,8 +7,15 @@ import "../styles/carousel.css";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import OrdersModal from "./OrdersModal";
 
 const CarouselPage = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className="carouselContainer">
       <p className="locationText">
@@ -24,6 +31,27 @@ const CarouselPage = () => {
           />
         </a>
       </p>
+      <motion.div
+        className="orderNow border-2 border-warning border-bottom border-top"
+        initial={{ y: -50 }}
+        animate={{ y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 600,
+          damping: 10,
+          duration: 3,
+        }}>
+        <h1 className="orderH1" type="button" onClick={handleShow}>
+          ORDER NOW
+        </h1>
+      </motion.div>
+      <motion.h2
+        initial={{ opacity: 0, x: 0, y: 20 }}
+        animate={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 1.5 }}
+        className="subtitle border-bottom border-2">
+        Welcome
+      </motion.h2>
       <motion.h1
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -32,7 +60,7 @@ const CarouselPage = () => {
         Miga's Steakhouse
         <div style={{ display: "flex" }}>
           <p className="border-bottom border-2" style={{ width: "45%" }}></p>
-          <span></span>
+          <span className="icon"></span>
           <p style={{ width: "47%" }} className="border-bottom border-2"></p>
         </div>
       </motion.h1>
@@ -43,13 +71,11 @@ const CarouselPage = () => {
         transition={{ delay: 2, duration: 1.5 }}>
         Since 2009
       </motion.h2>
-      <motion.h2
-        initial={{ opacity: 0, x: 0, y: 20 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 1.5 }}
-        className="subtitle border-bottom border-2">
-        Welcome
-      </motion.h2>
+      <motion.h5
+        className="orderBottomCorner btn btn-light btn-lg text-dark"
+        onClick={handleShow}>
+        ORDER NOW
+      </motion.h5>
       <Carousel interval={500} style={{ width: "100%" }}>
         <Carousel.Item>
           <div className="sliderContainer">
@@ -71,6 +97,7 @@ const CarouselPage = () => {
           </div>
         </Carousel.Item>
       </Carousel>
+      <OrdersModal show={showModal} handleShow={handleShow} />
     </div>
   );
 };

@@ -14,6 +14,21 @@
   padding-left: 0.2rem;
 }
 
+.orderNow {
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  color: white;
+}
+
+.orderBottomCorner {
+  position: absolute;
+  z-index: 2;
+  bottom: 4%;
+  right: 2%;
+  color: white;
+}
+
 .carouselContainer {
   position: relative;
   display: flex;
@@ -42,13 +57,13 @@
   z-index: 1;
 }
 
-span {
+.icon {
   background: url(https://migasflorida.com/wp-content/themes/themify-ultra/skins/restaurant/images/fork-knife.svg)
     no-repeat 50%;
   content: "";
   display: block;
   height: 24px;
-  margin: 0 8px;
+  margin: 0 2px;
   width: 24px;
 }
 
@@ -84,4 +99,34 @@ span {
 
 .slide {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .subtitle,
+  .pLength,
+  .carouselHeading {
+    font-size: 1rem;
+  }
+  .locationText {
+    top: 2%;
+    font-size: 0.5rem;
+  }
+  .icon {
+    background: url(https://migasflorida.com/wp-content/themes/themify-ultra/skins/restaurant/images/fork-knife.svg)
+      no-repeat 20%;
+    content: "";
+    display: block;
+    height: 10px;
+    margin: 0 4px;
+    width: 22px;
+  }
+
+  .orderH1 {
+    font-size: 1rem;
+  }
+
+  .orderBottomCorner {
+    font-size: 0.5rem;
+    width: 30%;
+  }
 }

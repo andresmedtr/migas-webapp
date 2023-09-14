@@ -9,24 +9,18 @@ const PlatesCarousel = () => {
       <div className="d-flex align-items-center justify-content-center">
         <h2 className="border-2 border-bottom border-warning">MIX GRILLS</h2>
       </div>
-      <div
-        className="d-flex align-items-center justify-content-center"
-        style={{
-          textAlign: "center",
-          paddingLeft: "5rem",
-          paddingRight: "5rem",
-        }}>
+      <div className="d-flex align-items-center justify-content-center">
         <Carousel
-          className=""
+          className="carouselShow"
           style={{
-            width: "90%",
+            width: "50%",
           }}>
           {menuData.mixGrills.map((item, index) => (
             <Carousel.Item key={index}>
               <img
-                className="w-100 carouselImage"
+                className="w-100"
                 src={require(`../../assets/${item.image}`)}
-                alt={`${index} Slide`}
+                alt={`${index + 1} Slide`}
               />
               <div className="image-overlay"></div>
               <Carousel.Caption className="itemDescription">
@@ -37,18 +31,13 @@ const PlatesCarousel = () => {
           ))}
         </Carousel>
       </div>
-      <div className="d-flex align-items-center justify-content-center mt-5">
+
+      <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
         <h2 className="border-2 border-bottom border-warning">BREAKFAST</h2>
       </div>
-      <div
-        className="d-flex align-items-center justify-content-center"
-        style={{
-          textAlign: "center",
-          paddingLeft: "5rem",
-          paddingRight: "5rem",
-        }}>
+      <div className="d-flex align-items-center justify-content-center">
         <Carousel
-          className=""
+          className="carouselShow"
           style={{
             width: "50%",
           }}>
@@ -57,10 +46,9 @@ const PlatesCarousel = () => {
               <img
                 className="w-100"
                 src={require(`../../assets/${item.image}`)}
-                alt={`${index} Slide`}
+                alt={`${index + 1} Slide`}
               />
               <div className="image-overlay"></div>
-
               <Carousel.Caption className="itemDescription">
                 <h5>{item.name}</h5>
                 <p>{item.description}</p>
@@ -69,18 +57,12 @@ const PlatesCarousel = () => {
           ))}
         </Carousel>
       </div>
-      <div className="d-flex align-items-center justify-content-center mt-5">
+      <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
         <h2 className="border-2 border-bottom border-warning">DESSERTS</h2>
       </div>
-      <div
-        className="d-flex align-items-center justify-content-center"
-        style={{
-          textAlign: "center",
-          paddingLeft: "5rem",
-          paddingRight: "5rem",
-        }}>
+      <div className="d-flex align-items-center justify-content-center">
         <Carousel
-          className=""
+          className="carouselShow"
           style={{
             width: "50%",
           }}>

@@ -5,9 +5,7 @@ import PopularPlates from "../components/PopularPlates";
 const Home = () => {
   return (
     <div>
-      <div className="justify-center">
-        <Carousel />
-      </div>
+      <Carousel />
       <About />
       <PopularPlates />
     </div>
