@@ -7,6 +7,10 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.borderBottom {
+  border-bottom: 4px solid #b48303;
+}
+
 .itemDescription p {
   font-size: 1rem; /* Default font size */
 }

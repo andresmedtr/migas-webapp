@@ -7,6 +7,12 @@ body {
   font-family: "El Messiri", sans-serif;
 }
 
+.App {
+  background-image: url("../assets/bkground.png");
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+  background-attachment: fixed; /* Fixes the image position while scrolling */
+}
 .link {
   text-decoration: none;
 }

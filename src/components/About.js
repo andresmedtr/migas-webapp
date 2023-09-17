@@ -1,6 +1,6 @@
 import React from "react";
-import { useEffect, useRef } from "react";
-import Migas from "../assets/migasFront.mp4";
+// import { useEffect, useRef } from "react";
+// import Migas from "../assets/migasFront.mp4";
 import "../styles/about.css";
 import { motion } from "framer-motion";
 import Frame from "./Frame";
@@ -8,15 +8,15 @@ import Frame from "./Frame";
 const About = () => {
   // const { scrollYProgress } = useScroll();
   // const scale = useTransform(scrollYProgress, [0, 2], [1, 2]);
-  const videoRef = useRef();
-  useEffect(() => {
-    videoRef.current.play();
-  }, []);
+  // const videoRef = useRef();
+  // useEffect(() => {
+  //   videoRef.current.play();
+  // }, []);
 
   return (
     <div>
       <motion.div
-        data-aos="fade-right"
+        data-aos="fade-down"
         className="scrollContainer"
         style={{
           height: "auto",
@@ -24,10 +24,9 @@ const About = () => {
           // opacity: scrollYProgress,
           // transform: `scale(${scale})`,
         }}>
-        <div className="title">
+        <div className="title container">
           <motion.h1
-            style={{ display: "flex", justifyContent: "center" }}
-            className="border-bottom border-warning text-center border-4"
+            className="borderBottom text-center "
             initial={{ opacity: 0, x: 0, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 1 }}
@@ -42,7 +41,7 @@ const About = () => {
         </div>
         <div className="contentContainer">
           <div className="p-4">
-            <p className="pAbout m-0 mb-5 border-2 border-bottom border-warning">
+            <p className="pAbout m-0 mb-5 ">
               For the past 14 years, Miga's Steakhouse has been synonymous with
               premium steaks—curated with meticulous care to honor the heritage
               of Argentinian grilling and innovation alike. Step into our
@@ -56,14 +55,14 @@ const About = () => {
               extending our offerings beyond steak enthusiasts, with a dense
               variety of wines.
             </p>
-            <video
+            {/* <video
               className="video w-50 m-auto rounded-4"
               loop
               muted
               ref={videoRef}
               autoPlay={true}>
               <source src={Migas} />
-            </video>
+            </video> */}
           </div>
         </div>
       </motion.div>

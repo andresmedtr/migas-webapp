@@ -22,6 +22,10 @@
   justify-content: center;
 }
 
+.borderBottom {
+  border-bottom: 4px solid#b48303;
+}
+
 @media screen and (max-width: 768px) {
   .pAbout {
     font-size: 1rem;

@@ -7,11 +7,11 @@ const PlatesCarousel = () => {
   return (
     <div>
       <div className="d-flex align-items-center justify-content-center">
-        <h2 className="border-2 border-bottom border-warning">MIX GRILLS</h2>
+        <h2 className="borderBottom">MIX GRILLS</h2>
       </div>
       <div
         className="d-flex align-items-center justify-content-center"
-        data-aos="fade-right">
+        data-aos="fade-up">
         <Carousel
           className="carouselShow"
           style={{
@@ -35,11 +35,11 @@ const PlatesCarousel = () => {
       </div>
 
       <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
-        <h2 className="border-2 border-bottom border-warning">BREAKFAST</h2>
+        <h2 className="borderBottom">BREAKFAST</h2>
       </div>
       <div
         className="d-flex align-items-center justify-content-center"
-        data-aos="fade-left">
+        data-aos="fade-down">
         <Carousel
           className="carouselShow"
           style={{
@@ -62,11 +62,11 @@ const PlatesCarousel = () => {
         </Carousel>
       </div>
       <div className="d-flex align-items-center justify-content-center mt-5 ps-5 pe-5">
-        <h2 className="border-2 border-bottom border-warning">DESSERTS</h2>
+        <h2 className="borderBottom">DESSERTS</h2>
       </div>
       <div
         className="d-flex align-items-center justify-content-center mb-5"
-        data-aos="fade-right">
+        data-aos="fade-up">
         <Carousel
           className="carouselShow"
           style={{

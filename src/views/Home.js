@@ -4,6 +4,7 @@ import Carousel from "../components/Carousel";
 import PopularPlates from "../components/PopularPlates";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Promotions from "../components/Promotions";
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -18,6 +19,7 @@ const Home = () => {
     <div>
       <Carousel />
       <About />
+      <Promotions />
       <PopularPlates />
     </div>
   );

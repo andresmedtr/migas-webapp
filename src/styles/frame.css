@@ -3,6 +3,10 @@ iframe {
   height: 40rem; /* Set a fixed height, you can adjust this as needed */
 }
 
+.borderBottom {
+  border-bottom: 4px solid#b48303;
+}
+
 /* Media query for screens with a max width of 768px (typical mobile screens) */
 @media screen and (max-width: 768px) {
   iframe {

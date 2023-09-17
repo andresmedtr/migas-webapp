@@ -28,8 +28,11 @@ const CustomNavbar = () => {
           onClick={handleClick}
           aria-controls="navbarSupportedContent"
         />
-        <Navbar.Collapse id="navbarSupportedContent" className="navbarItems">
-          <Nav className="nav-items ms-auto pe-2">
+        <Navbar.Collapse
+          id="navbarSupportedContent"
+          className="navbarItems"
+          onClick={() => setClick(false)}>
+          <Nav className="nav-items ms-auto">
             <Nav.Link as={Link} to="/" className="nav-link">
               Home
             </Nav.Link>

@@ -10,7 +10,13 @@
       "name": "Continental Breakfast",
       "description": "Smoked ham & Provolone Cheese Egg Tortilla, served with coffee",
       "price": "13.99",
-      "image": "fruitwaffles.jpg"
+      "image": "continentalbreakfast.jpg"
+    },
+    {
+      "name": "Spinach Egg Tortilla",
+      "description": "Fresh Spinach Egg Tortilla, served with buttertoast",
+      "price": "13.99",
+      "image": "spinachomelette.jpg"
     },
     {
       "name": "Fruit Waffles",
@@ -116,5 +122,25 @@
       "image": "milhojas.jpg"
     }
   ],
-  "extras": [{ "name": "", "description": "", "price": "", "image": "" }]
+  "extras": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "promotions": [
+    {
+      "name": "Thursday",
+      "description": "On thursdays, our Mix Grill x 2, includes a pitcher of sangria",
+      "price": "53.99",
+      "image": "mixgrillx2.jpg"
+    },
+    {
+      "name": "Fridays & Saturdays",
+      "description": "Our Migas Meat Sample x 3, includes a pitcher of sangria or house wine",
+      "price": "100",
+      "image": "mixgrillx3.jpg"
+    },
+    {
+      "name": "Special Lunch",
+      "description": "Monday thru Friday, Picanha, Chicken Breast or Pork Chop, 1 side, 1 salad and a soup",
+      "price": "14.99",
+      "image": "fruitwaffles.jpg"
+    }
+  ]
 }

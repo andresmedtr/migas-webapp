@@ -41,20 +41,16 @@
 
 @media screen and (max-width: 768px) {
   .navbarContainer {
+    position: fixed;
     height: 1%;
-    width: 80%;
+    width: 100%;
+    z-index: 3;
   }
   .navBar {
-    height: 5%;
+    height: 7%;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
-    width: 74.5%;
-  }
-
-  .navbarContainer {
-    position: fixed;
-    z-index: 3;
-    width: 74.5%;
+    width: 97%;
   }
 
   .nav-items {
