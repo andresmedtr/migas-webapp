@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import About from "../components/About";
 import Carousel from "../components/Carousel";
-import PopularPlates from "../components/PopularPlates";
+import PopularPlates from "../components/Specialties/PopularPlates";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Promotions from "../components/Promotions";
+import Promotions from "../components/Promotions/Promotions";
 const Home = () => {
   useEffect(() => {
     AOS.init({

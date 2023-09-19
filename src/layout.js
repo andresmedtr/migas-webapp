@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CustomNavbar from "./components/CustomNavbar";
 import Home from "./views/Home";
 import { Footer } from "./components/Footer";
+import Butchery from "./views/Butchery";
+import Menu from "./views/Menu";
+import Contact from "./views/Contact";
 
 const basename = process.env.BASENAME || "";
 
@@ -13,6 +16,9 @@ function Layout() {
         <CustomNavbar />
         <Routes>
           <Route element={<Home />} path="/" />
+          <Route element={<Butchery />} path="/butchery" />
+          <Route element={<Menu />} path="/menu" />
+          <Route element={<Contact />} path="/contact" />
         </Routes>
         <Footer />
       </BrowserRouter>

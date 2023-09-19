@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import PlatesCarousel from "./Specialties/PlatesCarousel";
+import PlatesCarousel from "./PlatesCarousel";
 
 const PopularPlates = () => {
   return (

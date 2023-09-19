@@ -32,7 +32,7 @@ const CarouselPage = () => {
         </a>
       </p>
       <motion.div
-        className="orderNow"
+        className="orderNow border-2 border-warning border-bottom border-top"
         initial={{ y: -50 }}
         animate={{ y: 0 }}
         transition={{
