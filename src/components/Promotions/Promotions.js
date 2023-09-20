@@ -12,7 +12,7 @@ const Promotions = () => {
           display: "flex",
           justifyContent: "center",
         }}>
-        <h1 className="text-center">SPECIALS</h1>
+        <h1 className="text-center"> DAILY SPECIALS</h1>
       </div>
       <PromotionsCarousel slide={menuData} />
     </div>

@@ -2,7 +2,7 @@
   position: absolute;
   top: 6%;
   padding-top: 1rem;
-  width: 100%;
+  width: fit-content;
   font-size: x-large;
   display: block;
   text-align: center;
@@ -111,7 +111,7 @@
   }
   .locationText {
     top: 2%;
-    z-index: 4;
+    z-index: 3;
     font-size: 0.5rem;
   }
   .icon {

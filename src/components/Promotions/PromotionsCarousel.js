@@ -37,10 +37,9 @@ const PromotionsCarousel = ({ slide }) => {
                   className="image"
                 />
                 <h4
-                  className="mt-5 text-center"
+                  className="mt-5 text-center bordersBottom"
                   style={{
                     width: "95%",
-                    borderBottom: "2px solid#b48303",
                     marginRight: "0",
                   }}>
                   {item.description}

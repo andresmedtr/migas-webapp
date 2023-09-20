@@ -32,7 +32,7 @@ const CustomNavbar = () => {
           id="navbarSupportedContent"
           className="navbarItems"
           onClick={() => setClick(false)}>
-          <Nav className="nav-items ms-auto">
+          <Nav className="nav-items ms-auto" style={{ zIndex: "5" }}>
             <Nav.Link as={Link} to="/" className="nav-link">
               Home
             </Nav.Link>
