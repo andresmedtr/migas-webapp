@@ -29,11 +29,12 @@ const Frame = () => {
         data-aos="fade-up">
         <iframe
           title="virtual-visit"
-          width="400"
-          height="200"
-          src="https://my.matterport.com/show/?m=Eba1G7Wskqo"
-          allowFullScreen
-          allow="xr-spatial-tracking"></iframe>
+          width="853"
+          height="480"
+          src="https://my.matterport.com/show/?m=m7hivrboZwy"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="xr-spatial-tracking"></iframe>{" "}
       </div>
     </div>
   );
