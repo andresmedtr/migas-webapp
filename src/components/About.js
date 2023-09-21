@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <div>
+    <div id="aboutus">
       <motion.div
         data-aos="fade-down"
         className="scrollContainer"
@@ -29,8 +29,7 @@ const About = () => {
             className="borderBottom text-center "
             initial={{ opacity: 0, x: 0, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 1 }}
-            id="aboutus">
+            transition={{ duration: 1 }}>
             ABOUT US
           </motion.h1>
           <h4 className="titleDescription">
