@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
 
-app.post("/submit", (req, res) => {
+app.post("http://localhost:3001/submit", (req, res) => {
   const { email, name, subject, message } = req.body;
   const transporter = nodemailer.createTransport({
     service: "gmail", // e.g., 'gmail' or use your SMTP settings

@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import Butchery from "./views/Butchery";
 import Menu from "./views/Menu";
 import Contact from "./views/Contact";
+import "./styles/index.css";
 
 const basename = process.env.BASENAME || "";
 
