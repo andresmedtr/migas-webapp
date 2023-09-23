@@ -2,13 +2,14 @@ import React from "react";
 import menuData from "../../menus/menuData.json";
 import { Carousel } from "react-bootstrap";
 import "../../styles/popularplates.css";
+import { Link } from "react-router-dom";
 
 const PlatesCarousel = () => {
   return (
     <div className="row">
       <div className="col-4 mt-5 mb-5">
-        <div className="text-center">
-          <h2 className="w-50 bordersBottom mx-auto">BREAKFAST</h2>
+        <div className="">
+          <h2 className="text-center w-50 bordersBottom mx-auto">BREAKFAST</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -94,9 +95,9 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mt-5 mx-auto mb-5" data-aos="fade-down">
-        <div className="col-12 mt-5">
-          <h2 className="text-center bordersBottom mx-auto w-25">DESSERTS</h2>
+      <div className="w-75 mx-auto mb-5" data-aos="fade-down">
+        <div className="col-12">
+          <h2 className="text-center bordersBottom mx-auto w-50">DESSERTS</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -124,9 +125,9 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mt-5 mx-auto mb-5" data-aos="fade-down">
-        <div className="col-12 mt-5">
-          <h2 className="text-center bordersBottom mx-auto w-25">BUTCHERY</h2>
+      <div className="w-75 mx-auto p-5 pb-0" data-aos="fade-down">
+        <div className="col-12">
+          <h2 className="text-center bordersBottom mx-auto w-50">BUTCHERY</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -153,6 +154,14 @@ const PlatesCarousel = () => {
             ))}
           </Carousel>
         </div>
+      </div>
+
+      <div className="d-flex justify-content-center pt-5">
+        <Link to="/menu">
+          <p className="fs-2 btn btn-warning text-light mb-0 mt-5">
+            VIEW OUR FULL MENU
+          </p>
+        </Link>
       </div>
     </div>
   );

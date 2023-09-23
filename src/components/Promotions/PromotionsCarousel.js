@@ -31,17 +31,25 @@ const PromotionsCarousel = ({ slide }) => {
             {index === itemIdx && (
               <div>
                 <h2>{item.name}</h2>
-                <img
-                  src={require(`../../assets/${item.image}`)}
-                  alt={`${index + 1} ${item.name}`}
-                  className="image"
-                />
-                <h4
-                  className="mt-5 text-center bordersBottom"
-                  style={{
-                    width: "95%",
-                    marginRight: "0",
-                  }}>
+                {/* DISPLAYING IMAGE OR VIDEO ON DAILY SPECIALS SECTION */}
+                {!item.image ? (
+                  <video
+                    className="video w-50 m-auto rounded-4"
+                    loop
+                    muted
+                    playbackRate={1.5}
+                    autoPlay={true}>
+                    <source src={require(`../../assets/${item.video}`)} />
+                  </video>
+                ) : (
+                  <img
+                    src={require(`../../assets/${item.image}`)}
+                    alt={`${index + 1} ${item.name}`}
+                    className="image"
+                  />
+                )}
+
+                <h4 className="mt-5 w-50 bordersBottom mx-auto">
                   {item.description}
                 </h4>
               </div>

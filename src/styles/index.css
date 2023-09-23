@@ -9,10 +9,10 @@ body {
 
 .App {
   background-image: url("../assets/bkground.png");
-  background-size: cover; /* Ensures the image covers the entire background */
+  background-size: cover;
   background-position: top left;
-  background-repeat: no-repeat; /* Prevents image from repeating */
-  background-attachment: fixed; /* Fixes the image position while scrolling */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .link {
   text-decoration: none;

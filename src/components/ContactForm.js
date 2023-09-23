@@ -17,7 +17,11 @@ const ContactForm = () => {
           <h5>Sunday: 8:00 AM - 9:00 PM</h5>
         </div>
       </div>
-      <Form className="pt-5 w-25 mx-auto m-0 col-7">
+      <Form
+        className="pt-5 w-25 mx-auto m-0 col-7"
+        action="mailto:jodit54498@alvisani.com"
+        method="GET"
+        enctype="text/plain">
         <h5 className="text-center mx-auto w-100">Suggestions</h5>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label className="bg bg-dark w-100 text-white border-top rounded-2 text-center">
