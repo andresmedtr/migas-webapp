@@ -10,8 +10,7 @@ const PopularPlates = () => {
           textAlign: "center",
           padding: "2rem",
           fontSize: "3rem",
-        }}
-        className="container">
+        }}>
         <motion.h1
           style={{
             marginTop: "5%",

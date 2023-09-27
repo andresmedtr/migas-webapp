@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const PlatesCarousel = () => {
   return (
-    <div className="row">
+    <div className="row container-fluid">
       <div className="col-4 mt-5 mb-5">
         <div className="">
           <h2 className="text-center w-50 bordersBottom mx-auto">BREAKFAST</h2>
@@ -125,7 +125,7 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mx-auto p-5 pb-0" data-aos="fade-down">
+      <div className="w-75 mx-auto p-5" data-aos="fade-down">
         <div className="col-12">
           <h2 className="text-center bordersBottom mx-auto w-50">BUTCHERY</h2>
         </div>

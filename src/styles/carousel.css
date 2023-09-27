@@ -124,7 +124,7 @@
     width: 22px;
   }
   .orderNow {
-    z-index: 3;
+    z-index: 1;
   }
   .orderH1 {
     font-size: 1rem;
@@ -133,6 +133,6 @@
   .orderBottomCorner {
     font-size: 0.5rem;
     width: 30%;
-    z-index: 3;
+    z-index: 1;
   }
 }

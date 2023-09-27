@@ -8,7 +8,7 @@ export const Footer = () => {
   return (
     <footer
       id="footer"
-      className="text-center text-whit mt-5"
+      className="text-center text-white mt-5 container-fluid"
       style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
       <div className="">
         <div className="row d-flex">

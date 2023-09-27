@@ -19,7 +19,7 @@ const CustomNavbar = () => {
   };
 
   return (
-    <div className="navbarContainer">
+    <div className="navbarContainer w-100">
       <Navbar expand="lg" variant="dark" className="navBar">
         <Navbar.Brand as={Link} to="/" className="navbarLogo">
           <img className="logo-home" src={Logo} alt="Logo" />
@@ -27,12 +27,13 @@ const CustomNavbar = () => {
         <Navbar.Toggle
           onClick={handleClick}
           aria-controls="navbarSupportedContent"
+          onMouseLeave={() => setClick(false)}
         />
         <Navbar.Collapse
           id="navbarSupportedContent"
           className="navbarItems"
           onClick={() => setClick(false)}>
-          <Nav className="nav-items ms-auto" style={{ zIndex: "5" }}>
+          <Nav className="nav-items ms-auto" style={{ zIndex: "200" }}>
             <Nav.Link as={Link} to="/" className="nav-link">
               Home
             </Nav.Link>
