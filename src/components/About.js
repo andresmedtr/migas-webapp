@@ -24,7 +24,7 @@ const About = () => {
           // opacity: scrollYProgress,
           // transform: `scale(${scale})`,
         }}>
-        <div className="title container">
+        <div className="title container" id="about-us-section">
           <motion.h1
             className="borderBottom text-center "
             initial={{ opacity: 0, x: 0, y: -50 }}

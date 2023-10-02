@@ -5,6 +5,7 @@ import PopularPlates from "../components/Specialties/PopularPlates";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Promotions from "../components/Promotions/Promotions";
+
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -16,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="App">
       <Carousel />
       <About />
       <Promotions />

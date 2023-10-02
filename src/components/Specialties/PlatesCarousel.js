@@ -3,6 +3,7 @@ import menuData from "../../menus/menuData.json";
 import { Carousel } from "react-bootstrap";
 import "../../styles/popularplates.css";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const PlatesCarousel = () => {
   return (
@@ -149,6 +150,9 @@ const PlatesCarousel = () => {
                 <Carousel.Caption className="itemDescription">
                   <h5>{item.name}</h5>
                   <p>{item.description}</p>
+                  <Link to="/butchery">
+                    <Button variant="warning">Find out more..</Button>
+                  </Link>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}

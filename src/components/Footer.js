@@ -9,11 +9,11 @@ export const Footer = () => {
     <footer
       id="footer"
       className="text-center text-white mt-5 container-fluid"
-      style={{ backgroundColor: "rgba(0,0,0,0.5)" }}>
+      style={{ backgroundColor: "rgba(0,0,0,0.5)", marginTop: "auto" }}>
       <div className="">
         <div className="row d-flex">
           <div className="col">
-            <a href="#aboutus" className="link w-25">
+            <a href="/#about-us-section" className="link w-25">
               <p className="text-uppercase font-weight-bold text-warning m-0 p-2">
                 About us
               </p>
