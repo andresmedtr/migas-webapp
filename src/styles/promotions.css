@@ -5,7 +5,8 @@
 
 .slider {
   position: relative;
-  height: 100vh;
+  margin-top: 3rem;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +54,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    height: 55vh;
+  }
+
   .image {
     width: 55%;
     height: auto;

@@ -27,7 +27,6 @@ const CustomNavbar = () => {
         <Navbar.Toggle
           onClick={handleClick}
           aria-controls="navbarSupportedContent"
-          onMouseLeave={() => setClick(false)}
         />
         <Navbar.Collapse
           id="navbarSupportedContent"

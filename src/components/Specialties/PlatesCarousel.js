@@ -3,11 +3,10 @@ import menuData from "../../menus/menuData.json";
 import { Carousel } from "react-bootstrap";
 import "../../styles/popularplates.css";
 import { Link } from "react-router-dom";
-import { Button } from "react-bootstrap";
 
 const PlatesCarousel = () => {
   return (
-    <div className="row container-fluid">
+    <div className="row container-fluid mx-auto">
       <div className="col-4 mt-5 mb-5">
         <div className="">
           <h2 className="text-center w-50 bordersBottom mx-auto">BREAKFAST</h2>
@@ -29,8 +28,8 @@ const PlatesCarousel = () => {
                 />
                 <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
-                  <h5>{item.name}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="textCarousel">{item.name}</h5>
+                  <p className="textCarousel">{item.description}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
@@ -58,8 +57,8 @@ const PlatesCarousel = () => {
                 />
                 <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
-                  <h5>{item.name}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="textCarousel">{item.name}</h5>
+                  <p className="textCarousel">{item.description}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
@@ -88,8 +87,8 @@ const PlatesCarousel = () => {
                 />
                 <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
-                  <h5>{item.name}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="textCarousel">{item.name}</h5>
+                  <p className="textCarousel">{item.description}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
@@ -112,14 +111,14 @@ const PlatesCarousel = () => {
             {menuData.bakery.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage"
+                  className="fixedImage img-fluid"
                   src={require(`../../assets/${item.image}`)}
                   alt={`${index} Slide`}
                 />
                 <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
-                  <h5>{item.name}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="textCarousel">{item.name}</h5>
+                  <p className="textCarousel">{item.description}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
@@ -142,17 +141,14 @@ const PlatesCarousel = () => {
             {menuData.bakery.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage"
+                  className="fixedImage img-fluid"
                   src={require(`../../assets/${item.image}`)}
                   alt={`${index} Slide`}
                 />
                 <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
-                  <h5>{item.name}</h5>
-                  <p>{item.description}</p>
-                  <Link to="/butchery">
-                    <Button variant="warning">Find out more..</Button>
-                  </Link>
+                  <h5 className="textCarousel">{item.name}</h5>
+                  <p className="textCarousel">{item.description}</p>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
