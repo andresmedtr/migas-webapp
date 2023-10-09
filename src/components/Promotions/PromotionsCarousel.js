@@ -29,27 +29,35 @@ const PromotionsCarousel = ({ slide }) => {
             className={index === itemIdx ? "slideActive" : "slides"}
             key={index}>
             {index === itemIdx && (
-              <div>
-                <h2>{item.name}</h2>
+              <div className="w-100 mb-5">
+                <h2 className="mt-5">{item.name}</h2>
                 {/* DISPLAYING IMAGE OR VIDEO ON DAILY SPECIALS SECTION */}
                 {!item.image ? (
-                  <video
-                    className="video w-50 m-auto rounded-4"
-                    loop
-                    muted
-                    playbackRate={1.5}
-                    autoPlay={true}>
-                    <source src={require(`../../assets/${item.video}`)} />
-                  </video>
+                  <div className="w-50 mx-auto bg bg-dark rounded-4">
+                    <video
+                      className="w-100 video mx-auto rounded-4"
+                      loop
+                      muted
+                      playbackRate={1.5}
+                      autoPlay={true}
+                      style={{ opacity: "0.6" }}>
+                      <source src={require(`../../assets/${item.video}`)} />
+                    </video>
+                  </div>
                 ) : (
-                  <img
-                    src={require(`../../assets/${item.image}`)}
-                    alt={`${index + 1} ${item.name}`}
-                    className="image"
-                  />
+                  <div
+                    className="rounded-4 bg bg-dark w-75
+                   mx-auto">
+                    <img
+                      src={require(`../../assets/${item.image}`)}
+                      style={{ opacity: "0.6", height: "auto" }}
+                      alt={`${index + 1} ${item.name}`}
+                      className="image w-100 rounded-4"
+                    />
+                  </div>
                 )}
 
-                <h4 className="mt-5 w-50 bordersBottom mx-auto">
+                <h4 className="mt-2 w-50 bordersBottom mx-auto mb-5">
                   {item.description}
                 </h4>
               </div>

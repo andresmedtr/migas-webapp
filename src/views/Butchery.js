@@ -7,7 +7,7 @@ const Butchery = ({ isSmallScreen }) => {
   const [currentSelection, setCurrentSelection] = useState("");
 
   return (
-    <div className="pt-5">
+    <div className="pt-5 w-100 mx-auto">
       <motion.h1
         className="borderBottom text-center pt-5 w-25 mx-auto"
         initial={{ opacity: 0, x: 0, y: -50 }}
@@ -15,21 +15,21 @@ const Butchery = ({ isSmallScreen }) => {
         transition={{ duration: 1 }}>
         BUTCHERY
       </motion.h1>
-      <div className="row text-center pt-5">
-        <div className="col-12">
-          <motion.h2>ARGENTINIAN SPECIALTIES </motion.h2>
+      <div className="pt-5">
+        <div className="col-11 mx-auto">
+          <motion.h2 className="text-center">ARGENTINIAN SPECIALTIES</motion.h2>
           <motion.div
             initial={{ opacity: 0, x: 0, y: -50 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 1 }}
-            className="row d-flex justify-content-center">
+            className="row d-flex justify-content-center mx-auto">
             {menuData.butchery.steaks.map((item, index) => (
               <motion.div
                 initial={{ opacity: 0, x: 0, y: -50 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ duration: 1 }}
                 key={index}
-                className="bg card col-md-3 p-4 m-2 position-relative butcheryItem">
+                className="bg card col-md-3 p-4 m-2 position-relative butcheryItem mx-auto">
                 <img
                   onMouseEnter={() => {
                     setCurrentSelection(item.name);

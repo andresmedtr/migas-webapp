@@ -158,7 +158,7 @@ const PlatesCarousel = () => {
 
       <div className="d-flex justify-content-center pt-5">
         <Link to="/menu">
-          <p className="fs-2 btn btn-warning text-light mb-0 mt-5">
+          <p className="fs-2 btn btn-warning text-light mb-2 mt-5">
             VIEW OUR FULL MENU
           </p>
         </Link>

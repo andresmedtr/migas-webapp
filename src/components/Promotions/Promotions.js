@@ -6,9 +6,9 @@ const Promotions = () => {
   return (
     <div data-aos="fade-up" className="w-100">
       <div
-        className="borderBottom mt-5 container"
+        className="borderBottom mt-5 container "
         style={{
-          marginTop: "5%",
+          marginBottom: "8%",
           display: "flex",
           justifyContent: "center",
         }}>

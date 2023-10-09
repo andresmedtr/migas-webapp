@@ -31,16 +31,17 @@ const OrdersModal = ({ show, handleShow }) => {
               </a>
             </div>
           </div>
-          <div className="m-5 row">
+          <div className="m-5 row w-100 mx-auto">
             <h2
               className="text-center p-2 col-12"
               style={{ borderTop: "2px solid #b48303" }}>
               Delivery
             </h2>
-            <div className="text-center">
+            <div className="text-center w-100">
               <a
                 href="https://www.doordash.com/store/miga's-bread-deli-meat-&-wine-miramar-105895/?event_type=autocomplete&pickup=false"
                 target="_blank"
+                className="m-1"
                 rel="noreferrer">
                 <img
                   src={Doordash}
@@ -50,19 +51,18 @@ const OrdersModal = ({ show, handleShow }) => {
               <a
                 href="https://www.ubereats.com/store/migas/rMaZBuaLRfG7_Oq0-yUklg/c7cd2aeb-d461-4693-b7c1-be48838b547e?diningMode=DELIVERY"
                 target="_blank"
+                className="m-1"
                 rel="noreferrer">
-                <img
-                  src={Uber}
-                  className="w-25 rounded ms-5 col"
-                  alt="Uber"></img>
+                <img src={Uber} className="w-25 rounded col" alt="Uber"></img>
               </a>
               <a
                 href="https://postmates.com/store/migas/rMaZBuaLRfG7_Oq0-yUklg?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjg5MTQlMjBOVyUyMDE2OHRoJTIwU3QlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjI0OGNlYmMzMi04NmZkLTViNjQtZjZjYS0wMTI0NDE5Y2QyZjUlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTI1LjkyNTY5MiUyQyUyMmxvbmdpdHVkZSUyMiUzQS04MC4zNDU5MTklN0Q%3D"
                 target="_blank"
+                className="m-1"
                 rel="noreferrer">
                 <img
                   src={Uber}
-                  className="w-25 rounded ms-5 col"
+                  className="w-25 rounded col"
                   alt="Postmates"></img>
               </a>
             </div>
