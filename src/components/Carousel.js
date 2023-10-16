@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Asado from "../assets/asadodetiras.jpg";
 import MixGrillx2 from "../assets/mixgrillx2.jpg";
 import MixGrillx3 from "../assets/mixgrillx3.jpg";
 import { Carousel } from "react-bootstrap";
 import "../styles/carousel.css";
+import Migas from "../assets/VIDEO_MIGAS.mov";
+
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import OrdersModal from "./OrdersModal";
 
 const CarouselPage = () => {
+  const videoRef = useRef();
+  useEffect(() => {
+    videoRef.current.play();
+  }, []);
+
   const [showModal, setShowModal] = useState(false);
 
   const handleShow = () => {
@@ -76,7 +83,19 @@ const CarouselPage = () => {
         onClick={handleShow}>
         ORDER NOW
       </motion.h5>
-      <Carousel interval={500} style={{ width: "100%" }}>
+      <Carousel interval={2000} style={{ width: "100%" }}>
+        <Carousel.Item>
+          <div className="sliderContainer">
+            <video
+              className="video w-100 m-auto rounded-4"
+              loop
+              muted
+              ref={videoRef}
+              autoPlay={true}>
+              <source src={Migas} />
+            </video>
+          </div>
+        </Carousel.Item>
         <Carousel.Item>
           <div className="sliderContainer">
             <img className="d-block w-100" src={Asado} alt="ShortRibs" />

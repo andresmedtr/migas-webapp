@@ -4,7 +4,7 @@ import menuData from "../../menus/menuData.json";
 
 const Promotions = () => {
   return (
-    <div data-aos="fade-up" className="w-100">
+    <div data-aos="fade-up" className="mx-auto">
       <div
         className="borderBottom mt-5 container "
         style={{

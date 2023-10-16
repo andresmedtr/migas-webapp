@@ -4,7 +4,13 @@
       "name": "Argentinian Breakfast",
       "description": "Smoked ham & Provolone Cheese Croissant or Baguette, served with coffee",
       "price": "8.99",
-      "image": "fruitwaffles.jpg"
+      "image": "argentinianbf.jpg"
+    },
+    {
+      "name": "French Toast",
+      "description": "French toast from scratch, topped with powdered sugar and fruits",
+      "price": "8.99",
+      "image": "frenchtoast.jpg"
     },
     {
       "name": "Continental Breakfast",
@@ -29,6 +35,18 @@
       "description": "Homemade waffles, with fried chicken tenders.",
       "price": "13.99",
       "image": "chicken&waffles.jpg"
+    },
+    {
+      "name": "Avocado Smoked Salmon Bruschetta",
+      "description": "Delicious sliced french baguette, with an avocado & smoked salmon salad.",
+      "price": "18.99",
+      "image": "avosmksalmonbrusch.jpg"
+    },
+    {
+      "name": "New York Steak Brunch",
+      "description": "12oz New York Steak topped with two eggs and noisette potatoes.",
+      "price": "29.99",
+      "image": "nybrunch.jpg"
     }
   ],
   "appetizer": [
@@ -39,12 +57,42 @@
       "image": ""
     }
   ],
-  "grilled": [
+  "entrees": [
     {
       "name": "Meat Skewer",
       "description": "8oz Flank steak pieces with grilled vegetables",
       "price": "29.99",
-      "image": ""
+      "image": "nybrunch.jpg"
+    },
+    {
+      "name": "Short Ribs",
+      "description": "14oz Short ribs",
+      "price": "29.99",
+      "image": "shortribs.jpg"
+    },
+    {
+      "name": "Skirt Steak",
+      "description": "6oz/12oz  Churrasco steak",
+      "price": "29.99",
+      "image": "nybrunch.jpg"
+    },
+    {
+      "name": "Ribeye Steak",
+      "description": "Juicy 14oz steak, topped with garlic butter and rosemary",
+      "price": "34.99",
+      "image": "nybrunch.jpg"
+    },
+    {
+      "name": "Meat Skewer",
+      "description": "8oz Flank steak pieces with grilled vegetables",
+      "price": "29.99",
+      "image": "nybrunch.jpg"
+    },
+    {
+      "name": "White Fish & Shrimp",
+      "description": "Grilled Swai Fish, topped with garlic shrimp and menier sauce",
+      "price": "22.99",
+      "image": "fish&shrimp.jpg"
     }
   ],
   "specialties": [
@@ -90,7 +138,7 @@
       "name": "Mediterranean Sample for Four",
       "description": "Taste all of our specialties on a wooden plate, includes Shrimp, Pork Chop, Sausage, Picanha, New York Strip, and Short Ribs",
       "price": "134.99",
-      "image": "4meatsample.jpg"
+      "image": "mixgrillx4.jpg"
     },
     {
       "name": "Mediterranean Sample for Six",
@@ -103,7 +151,14 @@
   "burgers": [{ "name": "", "description": "", "price": "", "image": "" }],
   "pastas": [{ "name": "", "description": "", "price": "", "image": "" }],
   "sides": [{ "name": "", "description": "", "price": "", "image": "" }],
-  "seafood": [{ "name": "", "description": "", "price": "", "image": "" }],
+  "seafood": [
+    {
+      "name": "White Fish & Shrimp",
+      "description": "Grilled Swai Fish, topped with garlic shrimp and menier sauce",
+      "price": "22.99",
+      "image": "fish&shrimp.jpg"
+    }
+  ],
   "juices": [{ "name": "", "description": "", "price": "", "image": "" }],
   "beers": [{ "name": "", "description": "", "price": "", "image": "" }],
   "butchery": {
@@ -205,6 +260,12 @@
   "extras": [{ "name": "", "description": "", "price": "", "image": "" }],
   "promotions": [
     {
+      "name": "Everyday Brunch",
+      "description": "From 10:30 AM until 2:30 PM, Mimosa and House Dessert included",
+      "price": "16-20",
+      "video": "brunchs.mov"
+    },
+    {
       "name": "Thursdays",
       "description": "On thursdays, our Mix Grill x 2, includes a pitcher of sangria",
       "price": "53.99",
@@ -220,13 +281,7 @@
       "name": "Special Lunch",
       "description": "Monday thru Friday, Picanha, Chicken Breast or Pork Chop, 1 side, 1 salad and a soup",
       "price": "14.99",
-      "image": "fruitwaffles.jpg"
-    },
-    {
-      "name": "Everyday Brunch",
-      "description": "From 10:30 AM until 2:30 PM, Mimosa and House Dessert included",
-      "price": "16-20",
-      "video": "brunchs.mov"
+      "image": "shortribs.jpg"
     }
   ]
 }

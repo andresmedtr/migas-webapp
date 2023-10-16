@@ -15,18 +15,18 @@ const PlatesCarousel = () => {
           className="d-flex justify-content-center align-items-center h-100"
           data-aos="fade-up">
           <Carousel
-            className="carouselShow"
+            className="carouselShow bg bg-dark rounded-3"
             style={{
               width: "80%",
             }}>
             {menuData.breakfast.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage"
+                  className="fixedImage rounded-3"
                   src={require(`../../assets/${item.image}`)}
+                  style={{ opacity: "0.7" }}
                   alt={`${index + 1} Slide`}
                 />
-                <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
                   <h5 className="textCarousel">{item.name}</h5>
                   <p className="textCarousel">{item.description}</p>
@@ -38,24 +38,24 @@ const PlatesCarousel = () => {
       </div>
       <div className="col-4 mt-5 mb-5">
         <div className="text-center">
-          <h2 className="w-50  bordersBottom mx-auto">LUNCH</h2>
+          <h2 className="w-50  bordersBottom mx-auto">MIX GRILLS</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
           data-aos="fade-down">
           <Carousel
-            className="carouselShow"
+            className="carouselShow bg-dark rounded-3"
             style={{
               width: "80%",
             }}>
             {menuData.mixGrills.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage"
+                  className="fixedImage rounded-3"
                   src={require(`../../assets/${item.image}`)}
+                  style={{ opacity: "0.7" }}
                   alt={`${index + 1} Slide`}
                 />
-                <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
                   <h5 className="textCarousel">{item.name}</h5>
                   <p className="textCarousel">{item.description}</p>
@@ -67,25 +67,25 @@ const PlatesCarousel = () => {
       </div>
       <div className="col-4 mt-5 mb-5">
         <div className="text-center">
-          <h2 className="w-50 mx-auto bordersBottom">DINNER</h2>
+          <h2 className="w-50 mx-auto bordersBottom">ENTREES</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
           data-aos="fade-up">
           <Carousel
-            className="carouselShow"
+            className="carouselShow rounded-3 bg-dark"
             style={{
               width: "80%",
               height: "auto",
             }}>
-            {menuData.mixGrills.map((item, index) => (
+            {menuData.entrees.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage"
+                  className="fixedImage rounded-3"
                   src={require(`../../assets/${item.image}`)}
+                  style={{ opacity: "0.5" }}
                   alt={`${index} Slide`}
                 />
-                <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
                   <h5 className="textCarousel">{item.name}</h5>
                   <p className="textCarousel">{item.description}</p>
@@ -103,7 +103,7 @@ const PlatesCarousel = () => {
           className="d-flex justify-content-center align-items-center h-100"
           data-aos="fade-up">
           <Carousel
-            className="carouselShow"
+            className="carouselShow bg-dark rounded-3"
             style={{
               width: "80%",
               height: "auto",
@@ -111,11 +111,11 @@ const PlatesCarousel = () => {
             {menuData.bakery.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage img-fluid"
+                  className="fixedImage rounded-3"
                   src={require(`../../assets/${item.image}`)}
+                  style={{ opacity: "0.7" }}
                   alt={`${index} Slide`}
                 />
-                <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
                   <h5 className="textCarousel">{item.name}</h5>
                   <p className="textCarousel">{item.description}</p>
@@ -133,7 +133,7 @@ const PlatesCarousel = () => {
           className="d-flex justify-content-center align-items-center h-100"
           data-aos="fade-down">
           <Carousel
-            className="carouselShow"
+            className="carouselShow bg-dark rounded-3"
             style={{
               width: "80%",
               height: "auto",
@@ -141,11 +141,11 @@ const PlatesCarousel = () => {
             {menuData.bakery.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
-                  className="fixedImage img-fluid"
+                  className="fixedImage rounded-3"
                   src={require(`../../assets/${item.image}`)}
+                  style={{ opacity: "0.7" }}
                   alt={`${index} Slide`}
                 />
-                <div className="image-overlay"></div>
                 <Carousel.Caption className="itemDescription">
                   <h5 className="textCarousel">{item.name}</h5>
                   <p className="textCarousel">{item.description}</p>
