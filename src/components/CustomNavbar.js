@@ -8,10 +8,10 @@ import OrdersModal from "./OrdersModal";
 
 const CustomNavbar = () => {
   const [showModal, setShowModal] = useState(false);
-  const [click, setClick] = useState(false);
+  const [navItemClick, setNavItemClick] = useState(false);
 
   const handleClick = () => {
-    setClick(!click);
+    setNavItemClick(true);
   };
 
   const handleShow = () => {
@@ -24,14 +24,8 @@ const CustomNavbar = () => {
         <Navbar.Brand as={Link} to="/" className="navbarLogo">
           <img className="logo-home" src={Logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle
-          onClick={handleClick}
-          aria-controls="navbarSupportedContent"
-        />
-        <Navbar.Collapse
-          id="navbarSupportedContent"
-          className="navbarItems"
-          onClick={() => setClick(false)}>
+        <Navbar.Toggle aria-controls="navbarSupportedContent" />
+        <Navbar.Collapse id="navbarSupportedContent" className="navbarItems">
           <Nav className="nav-items ms-auto" style={{ zIndex: "200" }}>
             <Nav.Link as={Link} to="/" className="nav-link">
               Home
@@ -39,7 +33,11 @@ const CustomNavbar = () => {
             <Nav.Link as={Link} to="/menu" className="nav-link">
               Menu
             </Nav.Link>
-            <Nav.Item className="nav-link" onClick={handleShow}>
+            <Nav.Item
+              className="nav-link"
+              onClick={() => {
+                handleShow();
+              }}>
               Order
             </Nav.Item>
             <Nav.Link as={Link} to="/butchery" className="nav-link">
