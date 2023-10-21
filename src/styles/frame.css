@@ -1,17 +1,15 @@
 iframe {
-  width: 80%; /* By default, make it fill the container width */
-  height: 40rem; /* Set a fixed height, you can adjust this as needed */
+  width: 80%;
+  height: 40rem;
 }
 
 .borderBottom {
   border-bottom: 4px solid#b48303;
 }
 
-/* Media query for screens with a max width of 768px (typical mobile screens) */
 @media screen and (max-width: 768px) {
   iframe {
-    /* Adjust the width and height for smaller screens */
-    width: 80%; /* You can make it smaller if needed */
-    height: 10rem; /* You can adjust this as needed */
+    width: 80%;
+    height: 10rem;
   }
 }
