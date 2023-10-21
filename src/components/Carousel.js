@@ -44,10 +44,9 @@ const CarouselPage = () => {
           stiffness: 600,
           damping: 10,
           duration: 3,
-        }}>
-        <h1 className="orderH1" type="button" onClick={handleShow}>
-          ORDER NOW
-        </h1>
+        }}
+        onClick={handleShow}>
+        ORDER NOW
       </motion.div>
       <motion.h2
         initial={{ opacity: 0, x: 0, y: 20 }}

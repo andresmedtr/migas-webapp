@@ -16,6 +16,7 @@
 
 .orderNow {
   position: absolute;
+  font-size: 2rem;
   z-index: 2;
   top: 20%;
   color: white;
@@ -44,7 +45,6 @@
   position: absolute;
   top: 50%;
   text-align: center;
-  /* transform: translate(-50%, -50%) !important; */
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -53,7 +53,6 @@
 .pLength {
   position: absolute;
   top: 65%;
-  /* transform: translate(-50%, -50%) !important; */
   color: #b48303;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -105,7 +104,6 @@
 
 @media screen and (max-width: 768px) {
   .carouselContainer {
-    padding-top: 10%;
   }
 
   .subtitle,
@@ -128,10 +126,9 @@
     width: 22px;
   }
   .orderNow {
+    font-size: 0.8rem;
     z-index: 1;
-  }
-  .orderH1 {
-    font-size: 1rem;
+    top: 25%;
   }
 
   .orderBottomCorner {
