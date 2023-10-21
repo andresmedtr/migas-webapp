@@ -1,7 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Asado from "../assets/asadodetiras.jpg";
-import MixGrillx2 from "../assets/mixgrillx2.jpg";
-import MixGrillx3 from "../assets/mixgrillx3.jpg";
 import { Carousel } from "react-bootstrap";
 import "../styles/carousel.css";
 import Migas from "../assets/VIDEO_MIGAS.mov";
@@ -87,7 +84,7 @@ const CarouselPage = () => {
         <Carousel.Item>
           <div className="sliderContainer">
             <video
-              className="video w-100 m-auto rounded-4"
+              className="video w-100 m-auto"
               loop
               muted
               ref={videoRef}

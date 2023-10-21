@@ -37,7 +37,7 @@ const PromotionsCarousel = ({ slide }) => {
                     className="w-50 rounded-4 "
                     loop
                     muted
-                    playbackRate={1.5}
+                    playbackrate={1.5}
                     autoPlay={true}>
                     <source src={require(`../../assets/${item.video}`)} />
                   </video>

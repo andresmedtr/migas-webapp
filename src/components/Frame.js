@@ -32,8 +32,7 @@ const Frame = () => {
           width="853"
           height="480"
           src="https://my.matterport.com/show/?m=m7hivrboZwy"
-          frameborder="0"
-          allowfullscreen="true"
+          allowFullScreen={true}
           allow="xr-spatial-tracking"></iframe>{" "}
       </div>
     </div>

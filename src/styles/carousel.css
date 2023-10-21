@@ -104,6 +104,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .carouselContainer {
+    padding-top: 10%;
+  }
+
   .subtitle,
   .pLength,
   .carouselHeading {
