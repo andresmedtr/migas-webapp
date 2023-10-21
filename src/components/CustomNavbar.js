@@ -8,14 +8,13 @@ import OrdersModal from "./OrdersModal";
 
 const CustomNavbar = () => {
   const [showModal, setShowModal] = useState(false);
-  const [navItemClick, setNavItemClick] = useState(false);
-
-  const handleClick = () => {
-    setNavItemClick(true);
-  };
 
   const handleShow = () => {
     setShowModal(!showModal);
+  };
+
+  const handleToggle = () => {
+    document.querySelector(".navbarItems").classList.remove("show");
   };
 
   return (
@@ -27,23 +26,40 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="navbarSupportedContent" />
         <Navbar.Collapse id="navbarSupportedContent" className="navbarItems">
           <Nav className="nav-items ms-auto" style={{ zIndex: "200" }}>
-            <Nav.Link as={Link} to="/" className="nav-link">
+            <Nav.Link
+              as={Link}
+              to="/"
+              className="nav-link"
+              onClick={handleToggle}>
               Home
             </Nav.Link>
-            <Nav.Link as={Link} to="/menu" className="nav-link">
+            <Nav.Link
+              as={Link}
+              to="/menu"
+              className="nav-link"
+              onClick={handleToggle}>
               Menu
             </Nav.Link>
             <Nav.Item
               className="nav-link"
               onClick={() => {
                 handleShow();
+                handleToggle();
               }}>
               Order
             </Nav.Item>
-            <Nav.Link as={Link} to="/butchery" className="nav-link">
+            <Nav.Link
+              as={Link}
+              to="/butchery"
+              className="nav-link"
+              onClick={handleToggle}>
               Butchery
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact" className="nav-link">
+            <Nav.Link
+              as={Link}
+              to="/contact"
+              className="nav-link"
+              onClick={handleToggle}>
               Contact
             </Nav.Link>
           </Nav>

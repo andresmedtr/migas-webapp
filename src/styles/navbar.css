@@ -19,6 +19,11 @@
   align-items: end;
 }
 
+/* Slow down the Bootstrap collapse animation */
+.navbar-collapse.collapse.show {
+  transition: max-height 0.8s;
+}
+
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;

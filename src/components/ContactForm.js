@@ -82,7 +82,9 @@ const ContactForm = () => {
   return (
     <div className="pt-5 row container mx-auto">
       <div className="col-md mt-5">
-        <h2 className="pt-5 text-center bordersBottom w-25-md mx-auto">
+        <h2
+          className="pt-3
+         text-center bordersBottom w-25-md mx-auto">
           Contact Us
         </h2>
         <div className="text-center mt-5">
