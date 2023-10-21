@@ -24,7 +24,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .App {
-    min-height: 50vh;
     background-size: cover;
     background-position: bottom right;
   }
