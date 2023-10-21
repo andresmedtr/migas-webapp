@@ -8,8 +8,8 @@ const PlatesCarousel = () => {
   return (
     <div className="row container-fluid mx-auto">
       <div className="col-4 mt-5 mb-5">
-        <div className="">
-          <h2 className="text-center w-50 bordersBottom mx-auto">BREAKFAST</h2>
+        <div className="text-center">
+          <h2 className="w-100 mx-auto">BREAKFAST</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -38,7 +38,7 @@ const PlatesCarousel = () => {
       </div>
       <div className="col-4 mt-5 mb-5">
         <div className="text-center">
-          <h2 className="w-50  bordersBottom mx-auto">MIX GRILLS</h2>
+          <h2 className="w-100 mx-auto">MIX GRILLS</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -67,7 +67,7 @@ const PlatesCarousel = () => {
       </div>
       <div className="col-4 mt-5 mb-5">
         <div className="text-center">
-          <h2 className="w-50 mx-auto bordersBottom">ENTREES</h2>
+          <h2 className="w-100 mx-auto">ENTREES</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -95,7 +95,7 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mx-auto mb-5" data-aos="fade-down">
+      <div className="w-75 mx-auto mb-5 mt-5" data-aos="fade-down">
         <div className="col-12">
           <h2 className="text-center bordersBottom mx-auto w-50">DESSERTS</h2>
         </div>
@@ -125,7 +125,7 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mx-auto p-5" data-aos="fade-down">
+      <div className="w-75 mx-auto mt-3" data-aos="fade-down">
         <div className="col-12">
           <h2 className="text-center bordersBottom mx-auto w-50">BUTCHERY</h2>
         </div>
@@ -138,7 +138,7 @@ const PlatesCarousel = () => {
               width: "80%",
               height: "auto",
             }}>
-            {menuData.bakery.map((item, index) => (
+            {menuData.butchery.steaks.map((item, index) => (
               <Carousel.Item key={index}>
                 <img
                   className="fixedImage rounded-3"
@@ -158,7 +158,9 @@ const PlatesCarousel = () => {
 
       <div className="d-flex justify-content-center pt-5">
         <Link to="/menu">
-          <p className="fs-2 btn btn-warning text-light mb-2 mt-5">
+          <p
+            className="fs-2 btn btn-warning text-light mb-2 mt-2
+          ">
             VIEW OUR FULL MENU
           </p>
         </Link>

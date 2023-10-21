@@ -37,6 +37,7 @@
     margin: auto;
   }
 
+  h2.w-100,
   h2.w-50 {
     font-size: 1rem;
   }

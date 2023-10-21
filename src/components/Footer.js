@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 export const Footer = () => {
   return (
@@ -46,6 +47,11 @@ export const Footer = () => {
             <p>
               Here at Miga's, we take honor in our beliefs, that's why we tried
               to make our best to show you all of this Restaurant's quality.
+            </p>
+            <p>
+              Reservations{" "}
+              <FontAwesomeIcon icon={faPhoneVolume} className="text-warning" />:
+              954-438-4242
             </p>
           </div>
         </div>

@@ -96,25 +96,6 @@ const CarouselPage = () => {
             </video>
           </div>
         </Carousel.Item>
-        <Carousel.Item>
-          <div className="sliderContainer">
-            <img className="d-block w-100" src={Asado} alt="ShortRibs" />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="sliderContainer">
-            <img
-              className="d-block w-100"
-              src={MixGrillx2}
-              alt="Second slide"
-            />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="sliderContainer">
-            <img className="d-block w-100" src={MixGrillx3} alt="Third slide" />
-          </div>
-        </Carousel.Item>
       </Carousel>
       <OrdersModal show={showModal} handleShow={handleShow} />
     </div>
