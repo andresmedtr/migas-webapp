@@ -37,6 +37,8 @@ const PromotionsCarousel = ({ slide }) => {
                     className="w-50 rounded-4 "
                     loop
                     muted
+                    playsInline
+                    allowFullScreen={true}
                     playbackrate={1.5}
                     autoPlay={true}>
                     <source src={require(`../../assets/${item.video}`)} />

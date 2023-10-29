@@ -86,8 +86,10 @@ const CarouselPage = () => {
               className="video w-100 m-auto"
               loop
               muted
+              allowFullScreen={true}
               ref={videoRef}
-              autoPlay={true}>
+              autoPlay={true}
+              playsInline>
               <source src={Migas} />
             </video>
           </div>
