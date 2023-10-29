@@ -8,26 +8,23 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-#root {
-  min-height: 100vh;
   background-image: url("../assets/bkground.png");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 .link {
   text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-  #root {
-    background-image: url("../assets/bkground.png");
+  body {
+    background-image: url("../assets/bgphoneview.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-attachment: scroll;
     background-position: center center;
   }
 }
