@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-.App {
+#root {
   min-height: 100vh;
   background-image: url("../assets/bkground.png");
   background-size: cover;
@@ -23,8 +23,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .App {
+  #root {
+    background-image: url("../assets/bkground.png");
     background-size: cover;
-    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
   }
 }
