@@ -17,7 +17,7 @@ const PopularPlates = () => {
             display: "flex",
             justifyContent: "center",
           }}
-          className="borderBottom w-50 mx-auto"
+          className="borderBottom w-75 mx-auto"
           initial={{ opacity: 0, x: 0, y: -50 }}
           animate={{ opacity: 1, x: 0, y: 0 }}
           transition={{ duration: 1 }}>

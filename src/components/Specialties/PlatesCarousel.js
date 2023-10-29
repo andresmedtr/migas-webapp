@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const PlatesCarousel = () => {
   return (
     <div className="row container-fluid mx-auto">
-      <div className="col-4 mt-5 mb-5">
+      <div className="col-lg-4 mt-5 mb-lg-5">
         <div className="text-center">
-          <h2 className="w-100 mx-auto">BREAKFAST</h2>
+          <h2 className="bordersBottom mx-auto w-50">BREAKFAST</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -36,9 +36,9 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="col-4 mt-5 mb-5">
+      <div className="col-lg-4 mt-5 mb-lg-5">
         <div className="text-center">
-          <h2 className="w-100 mx-auto">MIX GRILLS</h2>
+          <h2 className="bordersBottom mx-auto w-50">MIX GRILLS</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -65,9 +65,9 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="col-4 mt-5 mb-5">
+      <div className="col-lg-4 mt-5 mb-5">
         <div className="text-center">
-          <h2 className="w-100 mx-auto">ENTREES</h2>
+          <h2 className="bordersBottom mx-auto w-50">ENTREES</h2>
         </div>
         <div
           className="d-flex justify-content-center align-items-center h-100"
@@ -95,8 +95,8 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mx-auto mb-5 mt-5" data-aos="fade-down">
-        <div className="col-12">
+      <div className="w-lg-75 mx-auto mb-5 mt-5" data-aos="fade-down">
+        <div className="col-lg-12">
           <h2 className="text-center bordersBottom mx-auto w-50">DESSERTS</h2>
         </div>
         <div
@@ -105,7 +105,7 @@ const PlatesCarousel = () => {
           <Carousel
             className="carouselShow bg-dark rounded-3"
             style={{
-              width: "80%",
+              width: "50%",
               height: "auto",
             }}>
             {menuData.bakery.map((item, index) => (
@@ -125,8 +125,8 @@ const PlatesCarousel = () => {
           </Carousel>
         </div>
       </div>
-      <div className="w-75 mx-auto mt-3" data-aos="fade-down">
-        <div className="col-12">
+      <div className="w-lg-75 mx-auto mt-3" data-aos="fade-down">
+        <div className="col-lg-12">
           <h2 className="text-center bordersBottom mx-auto w-50">BUTCHERY</h2>
         </div>
         <div
@@ -135,7 +135,7 @@ const PlatesCarousel = () => {
           <Carousel
             className="carouselShow bg-dark rounded-3"
             style={{
-              width: "80%",
+              width: "50%",
               height: "auto",
             }}>
             {menuData.butchery.steaks.map((item, index) => (
