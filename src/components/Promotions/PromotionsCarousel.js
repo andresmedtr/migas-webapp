@@ -30,7 +30,7 @@ const PromotionsCarousel = ({ slide }) => {
             key={index}>
             {index === itemIdx && (
               <div className="mb-5">
-                <h2 className="mt-5">{item.name}</h2>
+                <h2 className="mt-lg-5">{item.name}</h2>
                 {/* DISPLAYING IMAGE OR VIDEO ON DAILY SPECIALS SECTION */}
                 {!item.image ? (
                   <video
@@ -38,13 +38,13 @@ const PromotionsCarousel = ({ slide }) => {
                     loop
                     muted
                     playsInline
-                    allowFullScreen={true}
+                    controls
                     playbackrate={1.5}
                     autoPlay={true}>
                     <source src={require(`../../assets/${item.video}`)} />
                   </video>
                 ) : (
-                  <div className="rounded-4 w-75 mx-auto bg bg-dark text-center">
+                  <div className="rounded-4 w-50 mx-auto bg bg-dark text-center">
                     <img
                       src={require(`../../assets/${item.image}`)}
                       style={{ opacity: "0.6", height: "auto" }}

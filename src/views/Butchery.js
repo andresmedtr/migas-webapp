@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import menuData from "../menus/menuData.json";
 import "../styles/butchery.css";
 
-const Butchery = ({ isSmallScreen }) => {
+const Butchery = () => {
   const [currentSelection, setCurrentSelection] = useState("");
 
   return (

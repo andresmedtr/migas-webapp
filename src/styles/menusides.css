@@ -1,0 +1,39 @@
+.fixedButton {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 20%;
+  right: 0%;
+}
+
+.sides-container {
+  position: relative;
+  left: 0%;
+  width: 20%;
+}
+
+.closeButton {
+  position: absolute;
+  width: 10%;
+  top: 2%;
+  right: 3%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.sides-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .sides-container {
+    width: 30%;
+  }
+
+  .closeButton {
+    width: 10px;
+  }
+  .heightSetting {
+    min-height: 100vh;
+  }
+}

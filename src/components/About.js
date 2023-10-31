@@ -1,18 +1,10 @@
 import React from "react";
-// import { useEffect, useRef } from "react";
-// import Migas from "../assets/VIDEO_MIGAS.mov";
+
 import "../styles/about.css";
 import { motion } from "framer-motion";
 import Frame from "./Frame";
 
 const About = () => {
-  // const { scrollYProgress } = useScroll();
-  // const scale = useTransform(scrollYProgress, [0, 2], [1, 2]);
-  // const videoRef = useRef();
-  // useEffect(() => {
-  //   videoRef.current.play();
-  // }, []);
-
   return (
     <div id="aboutus">
       <motion.div
@@ -21,8 +13,6 @@ const About = () => {
         style={{
           height: "auto",
           fontSize: "1.5rem",
-          // opacity: scrollYProgress,
-          // transform: `scale(${scale})`,
         }}>
         <div className="title container" id="about-us-section">
           <motion.h1
@@ -54,14 +44,6 @@ const About = () => {
               extending our offerings beyond steak enthusiasts, with a dense
               variety of wines.
             </p>
-            {/* <video
-              className="video w-50 m-auto rounded-4"
-              loop
-              muted
-              ref={videoRef}
-              autoPlay={true}>
-              <source src={Migas} />
-            </video> */}
           </div>
         </div>
       </motion.div>

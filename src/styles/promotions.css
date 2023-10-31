@@ -72,9 +72,10 @@
 
 @media screen and (max-width: 768px) {
   .slider {
+    margin-top: 0;
     width: 100%;
     overflow: hidden;
-    height: 55vh;
+    height: 40vh;
   }
 
   .image {
