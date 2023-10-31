@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import menuData from "../assets/menu/menuImg.json";
 import MenuSides from "../components/MenuSides";
+// import sides from "../assets/menu/sides.jpg";
 
 const Menu = () => {
   const iterateImages = (array) => {
@@ -36,8 +37,12 @@ const Menu = () => {
           MENU
         </motion.h1>
       </div>
-      <div className="row w-100 p-3 justify-content-center">{images}</div>
-      <MenuSides />
+      <div>
+        <MenuSides />
+      </div>
+      <div className="row w-100 p-3 justify-content-center menuImagesContainer">
+        {images}
+      </div>
     </div>
   );
 };
