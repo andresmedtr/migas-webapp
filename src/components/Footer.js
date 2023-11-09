@@ -23,13 +23,13 @@ export const Footer = () => {
           <div className="col p-2">
             <Link to="https://www.instagram.com/migas_florida/">
               <FontAwesomeIcon
-                className="text-warning fs-2"
+                className="text-warning fs-2 pe-1"
                 icon={faInstagram}
               />
             </Link>
             <Link to="https://m.facebook.com/people/Migas-Florida/100070057262272">
               <FontAwesomeIcon
-                className="text-warning fs-2"
+                className="text-warning fs-2 ps-1"
                 icon={faFacebook}
               />
             </Link>

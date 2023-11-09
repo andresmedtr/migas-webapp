@@ -1,12 +1,13 @@
 .fixedButton {
   position: fixed;
-  top: 20%;
-  right: 50%;
+  width: 15%;
+  bottom: 15%;
+  right: 10%;
 }
 
 .sides-container {
   left: 0%;
-  width: 30%;
+  width: 100%;
 }
 
 .closeButton {
@@ -19,7 +20,7 @@
 }
 
 .sides-image {
-  width: 20%;
+  width: 100%;
 }
 
 .menuImagesContainer {
