@@ -5,6 +5,13 @@
   right: 10%;
 }
 
+.sidesButton {
+  position: fixed;
+  width: 5%;
+  bottom: 15%;
+  right: 10%;
+}
+
 .sides-container {
   left: 0%;
   width: 100%;
@@ -29,11 +36,23 @@
 
 @media screen and (max-width: 768px) {
   .sides-container {
+    width: 100%;
+  }
+
+  .sidesButton {
+    width: 15%;
+  }
+
+  .fixedButton {
     width: 30%;
   }
 
+  .sides-image {
+    width: 100%;
+  }
+
   .closeButton {
-    width: 10px;
+    width: 10%;
   }
   .heightSetting {
     min-height: 100vh;

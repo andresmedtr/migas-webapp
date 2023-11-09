@@ -12,14 +12,11 @@ const MenuSides = () => {
   };
 
   return (
-    <div className="fixedButton w-50">
-      <div className="d-flex justify-content-end me-4">
+    <div className="w-50">
+      <div className="d-flex justify-content-end me-4 ">
         <p
           onClick={handleSides}
-          className={`btn btn-warning d-flex align-items-center fixedButton mx-auto ${
-            showSides && "d-none"
-          }`}
-          style={{ width: "4%" }}>
+          className={`sidesButton btn btn-warning ${showSides && "d-none"}`}>
           Sides
         </p>
       </div>
